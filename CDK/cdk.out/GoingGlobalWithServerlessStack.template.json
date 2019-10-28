@@ -1,0 +1,432 @@
+{
+  "Resources": {
+    "ddbGlobalHandlerServiceRoleE4714621": {
+      "Type": "AWS::IAM::Role",
+      "Properties": {
+        "AssumeRolePolicyDocument": {
+          "Statement": [
+            {
+              "Action": "sts:AssumeRole",
+              "Effect": "Allow",
+              "Principal": {
+                "Service": "lambda.amazonaws.com"
+              }
+            }
+          ],
+          "Version": "2012-10-17"
+        },
+        "ManagedPolicyArns": [
+          {
+            "Fn::Join": [
+              "",
+              [
+                "arn:",
+                {
+                  "Ref": "AWS::Partition"
+                },
+                ":iam::aws:policy/service-role/AWSLambdaBasicExecutionRole"
+              ]
+            ]
+          }
+        ]
+      },
+      "Metadata": {
+        "aws:cdk:path": "GoingGlobalWithServerlessStack/ddbGlobalHandler/ServiceRole/Resource"
+      }
+    },
+    "ddbGlobalHandlerServiceRoleDefaultPolicy847CC24F": {
+      "Type": "AWS::IAM::Policy",
+      "Properties": {
+        "PolicyDocument": {
+          "Statement": [
+            {
+              "Action": "*",
+              "Effect": "Allow",
+              "Resource": "arn:aws:dynamodb:*"
+            }
+          ],
+          "Version": "2012-10-17"
+        },
+        "PolicyName": "ddbGlobalHandlerServiceRoleDefaultPolicy847CC24F",
+        "Roles": [
+          {
+            "Ref": "ddbGlobalHandlerServiceRoleE4714621"
+          }
+        ]
+      },
+      "Metadata": {
+        "aws:cdk:path": "GoingGlobalWithServerlessStack/ddbGlobalHandler/ServiceRole/DefaultPolicy/Resource"
+      }
+    },
+    "ddbGlobalHandler83D6225F": {
+      "Type": "AWS::Lambda::Function",
+      "Properties": {
+        "Code": {
+          "S3Bucket": {
+            "Ref": "AssetParameters2f8513e8f4a500e6c8fec714b559b17f323f9aeaf8c4af7fed75e975ff0575e2S3Bucket3CF210EA"
+          },
+          "S3Key": {
+            "Fn::Join": [
+              "",
+              [
+                {
+                  "Fn::Select": [
+                    0,
+                    {
+                      "Fn::Split": [
+                        "||",
+                        {
+                          "Ref": "AssetParameters2f8513e8f4a500e6c8fec714b559b17f323f9aeaf8c4af7fed75e975ff0575e2S3VersionKey90EFFF05"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "Fn::Select": [
+                    1,
+                    {
+                      "Fn::Split": [
+                        "||",
+                        {
+                          "Ref": "AssetParameters2f8513e8f4a500e6c8fec714b559b17f323f9aeaf8c4af7fed75e975ff0575e2S3VersionKey90EFFF05"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            ]
+          }
+        },
+        "Handler": "writeDynamo.handler",
+        "Role": {
+          "Fn::GetAtt": [
+            "ddbGlobalHandlerServiceRoleE4714621",
+            "Arn"
+          ]
+        },
+        "Runtime": "nodejs8.10"
+      },
+      "DependsOn": [
+        "ddbGlobalHandlerServiceRoleDefaultPolicy847CC24F",
+        "ddbGlobalHandlerServiceRoleE4714621"
+      ],
+      "Metadata": {
+        "aws:cdk:path": "GoingGlobalWithServerlessStack/ddbGlobalHandler/Resource",
+        "aws:asset:path": "asset.2f8513e8f4a500e6c8fec714b559b17f323f9aeaf8c4af7fed75e975ff0575e2",
+        "aws:asset:property": "Code"
+      }
+    },
+    "globalrup12xyzD449AB44": {
+      "Type": "AWS::ApiGateway::RestApi",
+      "Properties": {
+        "Name": "global.rup12.xyz"
+      },
+      "Metadata": {
+        "aws:cdk:path": "GoingGlobalWithServerlessStack/global.rup12.xyz/Resource"
+      }
+    },
+    "globalrup12xyzDeployment76C6137F5cab944daaf03a4ff8081e85bc3f9517": {
+      "Type": "AWS::ApiGateway::Deployment",
+      "Properties": {
+        "RestApiId": {
+          "Ref": "globalrup12xyzD449AB44"
+        },
+        "Description": "Automatically created by the RestApi construct"
+      },
+      "DependsOn": [
+        "globalrup12xyzglobalGETBCDB8DE0",
+        "globalrup12xyzglobal682C0923"
+      ],
+      "Metadata": {
+        "aws:cdk:path": "GoingGlobalWithServerlessStack/global.rup12.xyz/Deployment/Resource"
+      }
+    },
+    "globalrup12xyzDeploymentStageprod9F841355": {
+      "Type": "AWS::ApiGateway::Stage",
+      "Properties": {
+        "RestApiId": {
+          "Ref": "globalrup12xyzD449AB44"
+        },
+        "DeploymentId": {
+          "Ref": "globalrup12xyzDeployment76C6137F5cab944daaf03a4ff8081e85bc3f9517"
+        },
+        "StageName": "prod"
+      },
+      "Metadata": {
+        "aws:cdk:path": "GoingGlobalWithServerlessStack/global.rup12.xyz/DeploymentStage.prod/Resource"
+      }
+    },
+    "globalrup12xyzCloudWatchRole923B46B8": {
+      "Type": "AWS::IAM::Role",
+      "Properties": {
+        "AssumeRolePolicyDocument": {
+          "Statement": [
+            {
+              "Action": "sts:AssumeRole",
+              "Effect": "Allow",
+              "Principal": {
+                "Service": "apigateway.amazonaws.com"
+              }
+            }
+          ],
+          "Version": "2012-10-17"
+        },
+        "ManagedPolicyArns": [
+          {
+            "Fn::Join": [
+              "",
+              [
+                "arn:",
+                {
+                  "Ref": "AWS::Partition"
+                },
+                ":iam::aws:policy/service-role/AmazonAPIGatewayPushToCloudWatchLogs"
+              ]
+            ]
+          }
+        ]
+      },
+      "Metadata": {
+        "aws:cdk:path": "GoingGlobalWithServerlessStack/global.rup12.xyz/CloudWatchRole/Resource"
+      }
+    },
+    "globalrup12xyzAccount6728DB55": {
+      "Type": "AWS::ApiGateway::Account",
+      "Properties": {
+        "CloudWatchRoleArn": {
+          "Fn::GetAtt": [
+            "globalrup12xyzCloudWatchRole923B46B8",
+            "Arn"
+          ]
+        }
+      },
+      "DependsOn": [
+        "globalrup12xyzD449AB44"
+      ],
+      "Metadata": {
+        "aws:cdk:path": "GoingGlobalWithServerlessStack/global.rup12.xyz/Account"
+      }
+    },
+    "globalrup12xyzglobal682C0923": {
+      "Type": "AWS::ApiGateway::Resource",
+      "Properties": {
+        "ParentId": {
+          "Fn::GetAtt": [
+            "globalrup12xyzD449AB44",
+            "RootResourceId"
+          ]
+        },
+        "PathPart": "global",
+        "RestApiId": {
+          "Ref": "globalrup12xyzD449AB44"
+        }
+      },
+      "Metadata": {
+        "aws:cdk:path": "GoingGlobalWithServerlessStack/global.rup12.xyz/Default/global/Resource"
+      }
+    },
+    "globalrup12xyzglobalGETApiPermissionGoingGlobalWithServerlessStackglobalrup12xyz82268BC0GETglobalCDA424B2": {
+      "Type": "AWS::Lambda::Permission",
+      "Properties": {
+        "Action": "lambda:InvokeFunction",
+        "FunctionName": {
+          "Fn::GetAtt": [
+            "ddbGlobalHandler83D6225F",
+            "Arn"
+          ]
+        },
+        "Principal": "apigateway.amazonaws.com",
+        "SourceArn": {
+          "Fn::Join": [
+            "",
+            [
+              "arn:",
+              {
+                "Ref": "AWS::Partition"
+              },
+              ":execute-api:",
+              {
+                "Ref": "AWS::Region"
+              },
+              ":",
+              {
+                "Ref": "AWS::AccountId"
+              },
+              ":",
+              {
+                "Ref": "globalrup12xyzD449AB44"
+              },
+              "/",
+              {
+                "Ref": "globalrup12xyzDeploymentStageprod9F841355"
+              },
+              "/GET/global"
+            ]
+          ]
+        }
+      },
+      "Metadata": {
+        "aws:cdk:path": "GoingGlobalWithServerlessStack/global.rup12.xyz/Default/global/GET/ApiPermission.GoingGlobalWithServerlessStackglobalrup12xyz82268BC0.GET..global"
+      }
+    },
+    "globalrup12xyzglobalGETApiPermissionTestGoingGlobalWithServerlessStackglobalrup12xyz82268BC0GETglobalB452C4B4": {
+      "Type": "AWS::Lambda::Permission",
+      "Properties": {
+        "Action": "lambda:InvokeFunction",
+        "FunctionName": {
+          "Fn::GetAtt": [
+            "ddbGlobalHandler83D6225F",
+            "Arn"
+          ]
+        },
+        "Principal": "apigateway.amazonaws.com",
+        "SourceArn": {
+          "Fn::Join": [
+            "",
+            [
+              "arn:",
+              {
+                "Ref": "AWS::Partition"
+              },
+              ":execute-api:",
+              {
+                "Ref": "AWS::Region"
+              },
+              ":",
+              {
+                "Ref": "AWS::AccountId"
+              },
+              ":",
+              {
+                "Ref": "globalrup12xyzD449AB44"
+              },
+              "/test-invoke-stage/GET/global"
+            ]
+          ]
+        }
+      },
+      "Metadata": {
+        "aws:cdk:path": "GoingGlobalWithServerlessStack/global.rup12.xyz/Default/global/GET/ApiPermission.Test.GoingGlobalWithServerlessStackglobalrup12xyz82268BC0.GET..global"
+      }
+    },
+    "globalrup12xyzglobalGETBCDB8DE0": {
+      "Type": "AWS::ApiGateway::Method",
+      "Properties": {
+        "HttpMethod": "GET",
+        "ResourceId": {
+          "Ref": "globalrup12xyzglobal682C0923"
+        },
+        "RestApiId": {
+          "Ref": "globalrup12xyzD449AB44"
+        },
+        "AuthorizationType": "NONE",
+        "Integration": {
+          "IntegrationHttpMethod": "POST",
+          "Type": "AWS_PROXY",
+          "Uri": {
+            "Fn::Join": [
+              "",
+              [
+                "arn:",
+                {
+                  "Ref": "AWS::Partition"
+                },
+                ":apigateway:",
+                {
+                  "Ref": "AWS::Region"
+                },
+                ":lambda:path/2015-03-31/functions/",
+                {
+                  "Fn::GetAtt": [
+                    "ddbGlobalHandler83D6225F",
+                    "Arn"
+                  ]
+                },
+                "/invocations"
+              ]
+            ]
+          }
+        }
+      },
+      "Metadata": {
+        "aws:cdk:path": "GoingGlobalWithServerlessStack/global.rup12.xyz/Default/global/GET/Resource"
+      }
+    },
+    "globalrup12xyzCustomDomain4CAD44A0": {
+      "Type": "AWS::ApiGateway::DomainName",
+      "Properties": {
+        "DomainName": "global.rup12.xyz",
+        "EndpointConfiguration": {
+          "Types": [
+            "REGIONAL"
+          ]
+        },
+        "RegionalCertificateArn": "arn:aws:acm:eu-west-1:824852318651:certificate/a2076d54-cf4c-4d8c-a00a-c33cdf6b6bbb"
+      },
+      "Metadata": {
+        "aws:cdk:path": "GoingGlobalWithServerlessStack/global.rup12.xyz/CustomDomain/Resource"
+      }
+    },
+    "globalrup12xyzCustomDomainMapGoingGlobalWithServerlessStackglobalrup12xyz82268BC087E42282": {
+      "Type": "AWS::ApiGateway::BasePathMapping",
+      "Properties": {
+        "DomainName": {
+          "Ref": "globalrup12xyzCustomDomain4CAD44A0"
+        },
+        "RestApiId": {
+          "Ref": "globalrup12xyzD449AB44"
+        },
+        "Stage": {
+          "Ref": "globalrup12xyzDeploymentStageprod9F841355"
+        }
+      },
+      "Metadata": {
+        "aws:cdk:path": "GoingGlobalWithServerlessStack/global.rup12.xyz/CustomDomain/Map:--=>GoingGlobalWithServerlessStackglobalrup12xyz82268BC0/Resource"
+      }
+    }
+  },
+  "Parameters": {
+    "AssetParameters2f8513e8f4a500e6c8fec714b559b17f323f9aeaf8c4af7fed75e975ff0575e2S3Bucket3CF210EA": {
+      "Type": "String",
+      "Description": "S3 bucket for asset \"2f8513e8f4a500e6c8fec714b559b17f323f9aeaf8c4af7fed75e975ff0575e2\""
+    },
+    "AssetParameters2f8513e8f4a500e6c8fec714b559b17f323f9aeaf8c4af7fed75e975ff0575e2S3VersionKey90EFFF05": {
+      "Type": "String",
+      "Description": "S3 key for asset version \"2f8513e8f4a500e6c8fec714b559b17f323f9aeaf8c4af7fed75e975ff0575e2\""
+    },
+    "AssetParameters2f8513e8f4a500e6c8fec714b559b17f323f9aeaf8c4af7fed75e975ff0575e2ArtifactHash9555313D": {
+      "Type": "String",
+      "Description": "Artifact hash for asset \"2f8513e8f4a500e6c8fec714b559b17f323f9aeaf8c4af7fed75e975ff0575e2\""
+    }
+  },
+  "Outputs": {
+    "globalrup12xyzEndpointA9C513DC": {
+      "Value": {
+        "Fn::Join": [
+          "",
+          [
+            "https://",
+            {
+              "Ref": "globalrup12xyzD449AB44"
+            },
+            ".execute-api.",
+            {
+              "Ref": "AWS::Region"
+            },
+            ".",
+            {
+              "Ref": "AWS::URLSuffix"
+            },
+            "/",
+            {
+              "Ref": "globalrup12xyzDeploymentStageprod9F841355"
+            },
+            "/"
+          ]
+        ]
+      }
+    }
+  }
+}

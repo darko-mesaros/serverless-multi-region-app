@@ -1,0 +1,733 @@
+{
+  "version": "tree-0.1",
+  "tree": {
+    "id": "App",
+    "path": "",
+    "children": [
+      {
+        "id": "Tree",
+        "path": "Tree"
+      },
+      {
+        "id": "euWest1GoingGlobalWithServerlessStack",
+        "path": "euWest1GoingGlobalWithServerlessStack",
+        "children": [
+          {
+            "id": "ddbGlobalHandler",
+            "path": "euWest1GoingGlobalWithServerlessStack/ddbGlobalHandler",
+            "children": [
+              {
+                "id": "ServiceRole",
+                "path": "euWest1GoingGlobalWithServerlessStack/ddbGlobalHandler/ServiceRole",
+                "children": [
+                  {
+                    "id": "Resource",
+                    "path": "euWest1GoingGlobalWithServerlessStack/ddbGlobalHandler/ServiceRole/Resource"
+                  },
+                  {
+                    "id": "DefaultPolicy",
+                    "path": "euWest1GoingGlobalWithServerlessStack/ddbGlobalHandler/ServiceRole/DefaultPolicy",
+                    "children": [
+                      {
+                        "id": "Resource",
+                        "path": "euWest1GoingGlobalWithServerlessStack/ddbGlobalHandler/ServiceRole/DefaultPolicy/Resource"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "Code",
+                "path": "euWest1GoingGlobalWithServerlessStack/ddbGlobalHandler/Code",
+                "children": [
+                  {
+                    "id": "Stage",
+                    "path": "euWest1GoingGlobalWithServerlessStack/ddbGlobalHandler/Code/Stage"
+                  },
+                  {
+                    "id": "AssetBucket",
+                    "path": "euWest1GoingGlobalWithServerlessStack/ddbGlobalHandler/Code/AssetBucket"
+                  }
+                ]
+              },
+              {
+                "id": "Resource",
+                "path": "euWest1GoingGlobalWithServerlessStack/ddbGlobalHandler/Resource"
+              }
+            ]
+          },
+          {
+            "id": "AssetParameters",
+            "path": "euWest1GoingGlobalWithServerlessStack/AssetParameters",
+            "children": [
+              {
+                "id": "2f8513e8f4a500e6c8fec714b559b17f323f9aeaf8c4af7fed75e975ff0575e2",
+                "path": "euWest1GoingGlobalWithServerlessStack/AssetParameters/2f8513e8f4a500e6c8fec714b559b17f323f9aeaf8c4af7fed75e975ff0575e2",
+                "children": [
+                  {
+                    "id": "S3Bucket",
+                    "path": "euWest1GoingGlobalWithServerlessStack/AssetParameters/2f8513e8f4a500e6c8fec714b559b17f323f9aeaf8c4af7fed75e975ff0575e2/S3Bucket"
+                  },
+                  {
+                    "id": "S3VersionKey",
+                    "path": "euWest1GoingGlobalWithServerlessStack/AssetParameters/2f8513e8f4a500e6c8fec714b559b17f323f9aeaf8c4af7fed75e975ff0575e2/S3VersionKey"
+                  },
+                  {
+                    "id": "ArtifactHash",
+                    "path": "euWest1GoingGlobalWithServerlessStack/AssetParameters/2f8513e8f4a500e6c8fec714b559b17f323f9aeaf8c4af7fed75e975ff0575e2/ArtifactHash"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "Certificate",
+            "path": "euWest1GoingGlobalWithServerlessStack/Certificate"
+          },
+          {
+            "id": "globalddb.rup12.xyz",
+            "path": "euWest1GoingGlobalWithServerlessStack/globalddb.rup12.xyz",
+            "children": [
+              {
+                "id": "Resource",
+                "path": "euWest1GoingGlobalWithServerlessStack/globalddb.rup12.xyz/Resource"
+              },
+              {
+                "id": "Deployment",
+                "path": "euWest1GoingGlobalWithServerlessStack/globalddb.rup12.xyz/Deployment",
+                "children": [
+                  {
+                    "id": "Resource",
+                    "path": "euWest1GoingGlobalWithServerlessStack/globalddb.rup12.xyz/Deployment/Resource"
+                  }
+                ]
+              },
+              {
+                "id": "DeploymentStage.prod",
+                "path": "euWest1GoingGlobalWithServerlessStack/globalddb.rup12.xyz/DeploymentStage.prod",
+                "children": [
+                  {
+                    "id": "Resource",
+                    "path": "euWest1GoingGlobalWithServerlessStack/globalddb.rup12.xyz/DeploymentStage.prod/Resource"
+                  }
+                ]
+              },
+              {
+                "id": "Endpoint",
+                "path": "euWest1GoingGlobalWithServerlessStack/globalddb.rup12.xyz/Endpoint"
+              },
+              {
+                "id": "CloudWatchRole",
+                "path": "euWest1GoingGlobalWithServerlessStack/globalddb.rup12.xyz/CloudWatchRole",
+                "children": [
+                  {
+                    "id": "Resource",
+                    "path": "euWest1GoingGlobalWithServerlessStack/globalddb.rup12.xyz/CloudWatchRole/Resource"
+                  }
+                ]
+              },
+              {
+                "id": "Account",
+                "path": "euWest1GoingGlobalWithServerlessStack/globalddb.rup12.xyz/Account"
+              },
+              {
+                "id": "Default",
+                "path": "euWest1GoingGlobalWithServerlessStack/globalddb.rup12.xyz/Default",
+                "children": [
+                  {
+                    "id": "global",
+                    "path": "euWest1GoingGlobalWithServerlessStack/globalddb.rup12.xyz/Default/global",
+                    "children": [
+                      {
+                        "id": "Resource",
+                        "path": "euWest1GoingGlobalWithServerlessStack/globalddb.rup12.xyz/Default/global/Resource"
+                      },
+                      {
+                        "id": "GET",
+                        "path": "euWest1GoingGlobalWithServerlessStack/globalddb.rup12.xyz/Default/global/GET",
+                        "children": [
+                          {
+                            "id": "ApiPermission.euWest1GoingGlobalWithServerlessStackglobalddbrup12xyzFAF0B5EE.GET..global",
+                            "path": "euWest1GoingGlobalWithServerlessStack/globalddb.rup12.xyz/Default/global/GET/ApiPermission.euWest1GoingGlobalWithServerlessStackglobalddbrup12xyzFAF0B5EE.GET..global"
+                          },
+                          {
+                            "id": "ApiPermission.Test.euWest1GoingGlobalWithServerlessStackglobalddbrup12xyzFAF0B5EE.GET..global",
+                            "path": "euWest1GoingGlobalWithServerlessStack/globalddb.rup12.xyz/Default/global/GET/ApiPermission.Test.euWest1GoingGlobalWithServerlessStackglobalddbrup12xyzFAF0B5EE.GET..global"
+                          },
+                          {
+                            "id": "Resource",
+                            "path": "euWest1GoingGlobalWithServerlessStack/globalddb.rup12.xyz/Default/global/GET/Resource"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "CustomDomain",
+                "path": "euWest1GoingGlobalWithServerlessStack/globalddb.rup12.xyz/CustomDomain",
+                "children": [
+                  {
+                    "id": "Resource",
+                    "path": "euWest1GoingGlobalWithServerlessStack/globalddb.rup12.xyz/CustomDomain/Resource"
+                  },
+                  {
+                    "id": "Map:--=>euWest1GoingGlobalWithServerlessStackglobalddbrup12xyzFAF0B5EE",
+                    "path": "euWest1GoingGlobalWithServerlessStack/globalddb.rup12.xyz/CustomDomain/Map:--=>euWest1GoingGlobalWithServerlessStackglobalddbrup12xyzFAF0B5EE",
+                    "children": [
+                      {
+                        "id": "Resource",
+                        "path": "euWest1GoingGlobalWithServerlessStack/globalddb.rup12.xyz/CustomDomain/Map:--=>euWest1GoingGlobalWithServerlessStackglobalddbrup12xyzFAF0B5EE/Resource"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "usEast1GoingGlobalWithServerlessStack",
+        "path": "usEast1GoingGlobalWithServerlessStack",
+        "children": [
+          {
+            "id": "ddbGlobalHandler",
+            "path": "usEast1GoingGlobalWithServerlessStack/ddbGlobalHandler",
+            "children": [
+              {
+                "id": "ServiceRole",
+                "path": "usEast1GoingGlobalWithServerlessStack/ddbGlobalHandler/ServiceRole",
+                "children": [
+                  {
+                    "id": "Resource",
+                    "path": "usEast1GoingGlobalWithServerlessStack/ddbGlobalHandler/ServiceRole/Resource"
+                  },
+                  {
+                    "id": "DefaultPolicy",
+                    "path": "usEast1GoingGlobalWithServerlessStack/ddbGlobalHandler/ServiceRole/DefaultPolicy",
+                    "children": [
+                      {
+                        "id": "Resource",
+                        "path": "usEast1GoingGlobalWithServerlessStack/ddbGlobalHandler/ServiceRole/DefaultPolicy/Resource"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "Code",
+                "path": "usEast1GoingGlobalWithServerlessStack/ddbGlobalHandler/Code",
+                "children": [
+                  {
+                    "id": "Stage",
+                    "path": "usEast1GoingGlobalWithServerlessStack/ddbGlobalHandler/Code/Stage"
+                  },
+                  {
+                    "id": "AssetBucket",
+                    "path": "usEast1GoingGlobalWithServerlessStack/ddbGlobalHandler/Code/AssetBucket"
+                  }
+                ]
+              },
+              {
+                "id": "Resource",
+                "path": "usEast1GoingGlobalWithServerlessStack/ddbGlobalHandler/Resource"
+              }
+            ]
+          },
+          {
+            "id": "AssetParameters",
+            "path": "usEast1GoingGlobalWithServerlessStack/AssetParameters",
+            "children": [
+              {
+                "id": "2f8513e8f4a500e6c8fec714b559b17f323f9aeaf8c4af7fed75e975ff0575e2",
+                "path": "usEast1GoingGlobalWithServerlessStack/AssetParameters/2f8513e8f4a500e6c8fec714b559b17f323f9aeaf8c4af7fed75e975ff0575e2",
+                "children": [
+                  {
+                    "id": "S3Bucket",
+                    "path": "usEast1GoingGlobalWithServerlessStack/AssetParameters/2f8513e8f4a500e6c8fec714b559b17f323f9aeaf8c4af7fed75e975ff0575e2/S3Bucket"
+                  },
+                  {
+                    "id": "S3VersionKey",
+                    "path": "usEast1GoingGlobalWithServerlessStack/AssetParameters/2f8513e8f4a500e6c8fec714b559b17f323f9aeaf8c4af7fed75e975ff0575e2/S3VersionKey"
+                  },
+                  {
+                    "id": "ArtifactHash",
+                    "path": "usEast1GoingGlobalWithServerlessStack/AssetParameters/2f8513e8f4a500e6c8fec714b559b17f323f9aeaf8c4af7fed75e975ff0575e2/ArtifactHash"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "Certificate",
+            "path": "usEast1GoingGlobalWithServerlessStack/Certificate"
+          },
+          {
+            "id": "globalddb.rup12.xyz",
+            "path": "usEast1GoingGlobalWithServerlessStack/globalddb.rup12.xyz",
+            "children": [
+              {
+                "id": "Resource",
+                "path": "usEast1GoingGlobalWithServerlessStack/globalddb.rup12.xyz/Resource"
+              },
+              {
+                "id": "Deployment",
+                "path": "usEast1GoingGlobalWithServerlessStack/globalddb.rup12.xyz/Deployment",
+                "children": [
+                  {
+                    "id": "Resource",
+                    "path": "usEast1GoingGlobalWithServerlessStack/globalddb.rup12.xyz/Deployment/Resource"
+                  }
+                ]
+              },
+              {
+                "id": "DeploymentStage.prod",
+                "path": "usEast1GoingGlobalWithServerlessStack/globalddb.rup12.xyz/DeploymentStage.prod",
+                "children": [
+                  {
+                    "id": "Resource",
+                    "path": "usEast1GoingGlobalWithServerlessStack/globalddb.rup12.xyz/DeploymentStage.prod/Resource"
+                  }
+                ]
+              },
+              {
+                "id": "Endpoint",
+                "path": "usEast1GoingGlobalWithServerlessStack/globalddb.rup12.xyz/Endpoint"
+              },
+              {
+                "id": "CloudWatchRole",
+                "path": "usEast1GoingGlobalWithServerlessStack/globalddb.rup12.xyz/CloudWatchRole",
+                "children": [
+                  {
+                    "id": "Resource",
+                    "path": "usEast1GoingGlobalWithServerlessStack/globalddb.rup12.xyz/CloudWatchRole/Resource"
+                  }
+                ]
+              },
+              {
+                "id": "Account",
+                "path": "usEast1GoingGlobalWithServerlessStack/globalddb.rup12.xyz/Account"
+              },
+              {
+                "id": "Default",
+                "path": "usEast1GoingGlobalWithServerlessStack/globalddb.rup12.xyz/Default",
+                "children": [
+                  {
+                    "id": "global",
+                    "path": "usEast1GoingGlobalWithServerlessStack/globalddb.rup12.xyz/Default/global",
+                    "children": [
+                      {
+                        "id": "Resource",
+                        "path": "usEast1GoingGlobalWithServerlessStack/globalddb.rup12.xyz/Default/global/Resource"
+                      },
+                      {
+                        "id": "GET",
+                        "path": "usEast1GoingGlobalWithServerlessStack/globalddb.rup12.xyz/Default/global/GET",
+                        "children": [
+                          {
+                            "id": "ApiPermission.usEast1GoingGlobalWithServerlessStackglobalddbrup12xyz2A1269D6.GET..global",
+                            "path": "usEast1GoingGlobalWithServerlessStack/globalddb.rup12.xyz/Default/global/GET/ApiPermission.usEast1GoingGlobalWithServerlessStackglobalddbrup12xyz2A1269D6.GET..global"
+                          },
+                          {
+                            "id": "ApiPermission.Test.usEast1GoingGlobalWithServerlessStackglobalddbrup12xyz2A1269D6.GET..global",
+                            "path": "usEast1GoingGlobalWithServerlessStack/globalddb.rup12.xyz/Default/global/GET/ApiPermission.Test.usEast1GoingGlobalWithServerlessStackglobalddbrup12xyz2A1269D6.GET..global"
+                          },
+                          {
+                            "id": "Resource",
+                            "path": "usEast1GoingGlobalWithServerlessStack/globalddb.rup12.xyz/Default/global/GET/Resource"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "CustomDomain",
+                "path": "usEast1GoingGlobalWithServerlessStack/globalddb.rup12.xyz/CustomDomain",
+                "children": [
+                  {
+                    "id": "Resource",
+                    "path": "usEast1GoingGlobalWithServerlessStack/globalddb.rup12.xyz/CustomDomain/Resource"
+                  },
+                  {
+                    "id": "Map:--=>usEast1GoingGlobalWithServerlessStackglobalddbrup12xyz2A1269D6",
+                    "path": "usEast1GoingGlobalWithServerlessStack/globalddb.rup12.xyz/CustomDomain/Map:--=>usEast1GoingGlobalWithServerlessStackglobalddbrup12xyz2A1269D6",
+                    "children": [
+                      {
+                        "id": "Resource",
+                        "path": "usEast1GoingGlobalWithServerlessStack/globalddb.rup12.xyz/CustomDomain/Map:--=>usEast1GoingGlobalWithServerlessStackglobalddbrup12xyz2A1269D6/Resource"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "usWest1GoingGlobalWithServerlessStack",
+        "path": "usWest1GoingGlobalWithServerlessStack",
+        "children": [
+          {
+            "id": "ddbGlobalHandler",
+            "path": "usWest1GoingGlobalWithServerlessStack/ddbGlobalHandler",
+            "children": [
+              {
+                "id": "ServiceRole",
+                "path": "usWest1GoingGlobalWithServerlessStack/ddbGlobalHandler/ServiceRole",
+                "children": [
+                  {
+                    "id": "Resource",
+                    "path": "usWest1GoingGlobalWithServerlessStack/ddbGlobalHandler/ServiceRole/Resource"
+                  },
+                  {
+                    "id": "DefaultPolicy",
+                    "path": "usWest1GoingGlobalWithServerlessStack/ddbGlobalHandler/ServiceRole/DefaultPolicy",
+                    "children": [
+                      {
+                        "id": "Resource",
+                        "path": "usWest1GoingGlobalWithServerlessStack/ddbGlobalHandler/ServiceRole/DefaultPolicy/Resource"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "Code",
+                "path": "usWest1GoingGlobalWithServerlessStack/ddbGlobalHandler/Code",
+                "children": [
+                  {
+                    "id": "Stage",
+                    "path": "usWest1GoingGlobalWithServerlessStack/ddbGlobalHandler/Code/Stage"
+                  },
+                  {
+                    "id": "AssetBucket",
+                    "path": "usWest1GoingGlobalWithServerlessStack/ddbGlobalHandler/Code/AssetBucket"
+                  }
+                ]
+              },
+              {
+                "id": "Resource",
+                "path": "usWest1GoingGlobalWithServerlessStack/ddbGlobalHandler/Resource"
+              }
+            ]
+          },
+          {
+            "id": "AssetParameters",
+            "path": "usWest1GoingGlobalWithServerlessStack/AssetParameters",
+            "children": [
+              {
+                "id": "2f8513e8f4a500e6c8fec714b559b17f323f9aeaf8c4af7fed75e975ff0575e2",
+                "path": "usWest1GoingGlobalWithServerlessStack/AssetParameters/2f8513e8f4a500e6c8fec714b559b17f323f9aeaf8c4af7fed75e975ff0575e2",
+                "children": [
+                  {
+                    "id": "S3Bucket",
+                    "path": "usWest1GoingGlobalWithServerlessStack/AssetParameters/2f8513e8f4a500e6c8fec714b559b17f323f9aeaf8c4af7fed75e975ff0575e2/S3Bucket"
+                  },
+                  {
+                    "id": "S3VersionKey",
+                    "path": "usWest1GoingGlobalWithServerlessStack/AssetParameters/2f8513e8f4a500e6c8fec714b559b17f323f9aeaf8c4af7fed75e975ff0575e2/S3VersionKey"
+                  },
+                  {
+                    "id": "ArtifactHash",
+                    "path": "usWest1GoingGlobalWithServerlessStack/AssetParameters/2f8513e8f4a500e6c8fec714b559b17f323f9aeaf8c4af7fed75e975ff0575e2/ArtifactHash"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "Certificate",
+            "path": "usWest1GoingGlobalWithServerlessStack/Certificate"
+          },
+          {
+            "id": "globalddb.rup12.xyz",
+            "path": "usWest1GoingGlobalWithServerlessStack/globalddb.rup12.xyz",
+            "children": [
+              {
+                "id": "Resource",
+                "path": "usWest1GoingGlobalWithServerlessStack/globalddb.rup12.xyz/Resource"
+              },
+              {
+                "id": "Deployment",
+                "path": "usWest1GoingGlobalWithServerlessStack/globalddb.rup12.xyz/Deployment",
+                "children": [
+                  {
+                    "id": "Resource",
+                    "path": "usWest1GoingGlobalWithServerlessStack/globalddb.rup12.xyz/Deployment/Resource"
+                  }
+                ]
+              },
+              {
+                "id": "DeploymentStage.prod",
+                "path": "usWest1GoingGlobalWithServerlessStack/globalddb.rup12.xyz/DeploymentStage.prod",
+                "children": [
+                  {
+                    "id": "Resource",
+                    "path": "usWest1GoingGlobalWithServerlessStack/globalddb.rup12.xyz/DeploymentStage.prod/Resource"
+                  }
+                ]
+              },
+              {
+                "id": "Endpoint",
+                "path": "usWest1GoingGlobalWithServerlessStack/globalddb.rup12.xyz/Endpoint"
+              },
+              {
+                "id": "CloudWatchRole",
+                "path": "usWest1GoingGlobalWithServerlessStack/globalddb.rup12.xyz/CloudWatchRole",
+                "children": [
+                  {
+                    "id": "Resource",
+                    "path": "usWest1GoingGlobalWithServerlessStack/globalddb.rup12.xyz/CloudWatchRole/Resource"
+                  }
+                ]
+              },
+              {
+                "id": "Account",
+                "path": "usWest1GoingGlobalWithServerlessStack/globalddb.rup12.xyz/Account"
+              },
+              {
+                "id": "Default",
+                "path": "usWest1GoingGlobalWithServerlessStack/globalddb.rup12.xyz/Default",
+                "children": [
+                  {
+                    "id": "global",
+                    "path": "usWest1GoingGlobalWithServerlessStack/globalddb.rup12.xyz/Default/global",
+                    "children": [
+                      {
+                        "id": "Resource",
+                        "path": "usWest1GoingGlobalWithServerlessStack/globalddb.rup12.xyz/Default/global/Resource"
+                      },
+                      {
+                        "id": "GET",
+                        "path": "usWest1GoingGlobalWithServerlessStack/globalddb.rup12.xyz/Default/global/GET",
+                        "children": [
+                          {
+                            "id": "ApiPermission.usWest1GoingGlobalWithServerlessStackglobalddbrup12xyzBC29576D.GET..global",
+                            "path": "usWest1GoingGlobalWithServerlessStack/globalddb.rup12.xyz/Default/global/GET/ApiPermission.usWest1GoingGlobalWithServerlessStackglobalddbrup12xyzBC29576D.GET..global"
+                          },
+                          {
+                            "id": "ApiPermission.Test.usWest1GoingGlobalWithServerlessStackglobalddbrup12xyzBC29576D.GET..global",
+                            "path": "usWest1GoingGlobalWithServerlessStack/globalddb.rup12.xyz/Default/global/GET/ApiPermission.Test.usWest1GoingGlobalWithServerlessStackglobalddbrup12xyzBC29576D.GET..global"
+                          },
+                          {
+                            "id": "Resource",
+                            "path": "usWest1GoingGlobalWithServerlessStack/globalddb.rup12.xyz/Default/global/GET/Resource"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "CustomDomain",
+                "path": "usWest1GoingGlobalWithServerlessStack/globalddb.rup12.xyz/CustomDomain",
+                "children": [
+                  {
+                    "id": "Resource",
+                    "path": "usWest1GoingGlobalWithServerlessStack/globalddb.rup12.xyz/CustomDomain/Resource"
+                  },
+                  {
+                    "id": "Map:--=>usWest1GoingGlobalWithServerlessStackglobalddbrup12xyzBC29576D",
+                    "path": "usWest1GoingGlobalWithServerlessStack/globalddb.rup12.xyz/CustomDomain/Map:--=>usWest1GoingGlobalWithServerlessStackglobalddbrup12xyzBC29576D",
+                    "children": [
+                      {
+                        "id": "Resource",
+                        "path": "usWest1GoingGlobalWithServerlessStack/globalddb.rup12.xyz/CustomDomain/Map:--=>usWest1GoingGlobalWithServerlessStackglobalddbrup12xyzBC29576D/Resource"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "apNortheast1GoingGlobalWithServerlessStack",
+        "path": "apNortheast1GoingGlobalWithServerlessStack",
+        "children": [
+          {
+            "id": "ddbGlobalHandler",
+            "path": "apNortheast1GoingGlobalWithServerlessStack/ddbGlobalHandler",
+            "children": [
+              {
+                "id": "ServiceRole",
+                "path": "apNortheast1GoingGlobalWithServerlessStack/ddbGlobalHandler/ServiceRole",
+                "children": [
+                  {
+                    "id": "Resource",
+                    "path": "apNortheast1GoingGlobalWithServerlessStack/ddbGlobalHandler/ServiceRole/Resource"
+                  },
+                  {
+                    "id": "DefaultPolicy",
+                    "path": "apNortheast1GoingGlobalWithServerlessStack/ddbGlobalHandler/ServiceRole/DefaultPolicy",
+                    "children": [
+                      {
+                        "id": "Resource",
+                        "path": "apNortheast1GoingGlobalWithServerlessStack/ddbGlobalHandler/ServiceRole/DefaultPolicy/Resource"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "Code",
+                "path": "apNortheast1GoingGlobalWithServerlessStack/ddbGlobalHandler/Code",
+                "children": [
+                  {
+                    "id": "Stage",
+                    "path": "apNortheast1GoingGlobalWithServerlessStack/ddbGlobalHandler/Code/Stage"
+                  },
+                  {
+                    "id": "AssetBucket",
+                    "path": "apNortheast1GoingGlobalWithServerlessStack/ddbGlobalHandler/Code/AssetBucket"
+                  }
+                ]
+              },
+              {
+                "id": "Resource",
+                "path": "apNortheast1GoingGlobalWithServerlessStack/ddbGlobalHandler/Resource"
+              }
+            ]
+          },
+          {
+            "id": "AssetParameters",
+            "path": "apNortheast1GoingGlobalWithServerlessStack/AssetParameters",
+            "children": [
+              {
+                "id": "2f8513e8f4a500e6c8fec714b559b17f323f9aeaf8c4af7fed75e975ff0575e2",
+                "path": "apNortheast1GoingGlobalWithServerlessStack/AssetParameters/2f8513e8f4a500e6c8fec714b559b17f323f9aeaf8c4af7fed75e975ff0575e2",
+                "children": [
+                  {
+                    "id": "S3Bucket",
+                    "path": "apNortheast1GoingGlobalWithServerlessStack/AssetParameters/2f8513e8f4a500e6c8fec714b559b17f323f9aeaf8c4af7fed75e975ff0575e2/S3Bucket"
+                  },
+                  {
+                    "id": "S3VersionKey",
+                    "path": "apNortheast1GoingGlobalWithServerlessStack/AssetParameters/2f8513e8f4a500e6c8fec714b559b17f323f9aeaf8c4af7fed75e975ff0575e2/S3VersionKey"
+                  },
+                  {
+                    "id": "ArtifactHash",
+                    "path": "apNortheast1GoingGlobalWithServerlessStack/AssetParameters/2f8513e8f4a500e6c8fec714b559b17f323f9aeaf8c4af7fed75e975ff0575e2/ArtifactHash"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "Certificate",
+            "path": "apNortheast1GoingGlobalWithServerlessStack/Certificate"
+          },
+          {
+            "id": "globalddb.rup12.xyz",
+            "path": "apNortheast1GoingGlobalWithServerlessStack/globalddb.rup12.xyz",
+            "children": [
+              {
+                "id": "Resource",
+                "path": "apNortheast1GoingGlobalWithServerlessStack/globalddb.rup12.xyz/Resource"
+              },
+              {
+                "id": "Deployment",
+                "path": "apNortheast1GoingGlobalWithServerlessStack/globalddb.rup12.xyz/Deployment",
+                "children": [
+                  {
+                    "id": "Resource",
+                    "path": "apNortheast1GoingGlobalWithServerlessStack/globalddb.rup12.xyz/Deployment/Resource"
+                  }
+                ]
+              },
+              {
+                "id": "DeploymentStage.prod",
+                "path": "apNortheast1GoingGlobalWithServerlessStack/globalddb.rup12.xyz/DeploymentStage.prod",
+                "children": [
+                  {
+                    "id": "Resource",
+                    "path": "apNortheast1GoingGlobalWithServerlessStack/globalddb.rup12.xyz/DeploymentStage.prod/Resource"
+                  }
+                ]
+              },
+              {
+                "id": "Endpoint",
+                "path": "apNortheast1GoingGlobalWithServerlessStack/globalddb.rup12.xyz/Endpoint"
+              },
+              {
+                "id": "CloudWatchRole",
+                "path": "apNortheast1GoingGlobalWithServerlessStack/globalddb.rup12.xyz/CloudWatchRole",
+                "children": [
+                  {
+                    "id": "Resource",
+                    "path": "apNortheast1GoingGlobalWithServerlessStack/globalddb.rup12.xyz/CloudWatchRole/Resource"
+                  }
+                ]
+              },
+              {
+                "id": "Account",
+                "path": "apNortheast1GoingGlobalWithServerlessStack/globalddb.rup12.xyz/Account"
+              },
+              {
+                "id": "Default",
+                "path": "apNortheast1GoingGlobalWithServerlessStack/globalddb.rup12.xyz/Default",
+                "children": [
+                  {
+                    "id": "global",
+                    "path": "apNortheast1GoingGlobalWithServerlessStack/globalddb.rup12.xyz/Default/global",
+                    "children": [
+                      {
+                        "id": "Resource",
+                        "path": "apNortheast1GoingGlobalWithServerlessStack/globalddb.rup12.xyz/Default/global/Resource"
+                      },
+                      {
+                        "id": "GET",
+                        "path": "apNortheast1GoingGlobalWithServerlessStack/globalddb.rup12.xyz/Default/global/GET",
+                        "children": [
+                          {
+                            "id": "ApiPermission.apNortheast1GoingGlobalWithServerlessStackglobalddbrup12xyzF9608CFF.GET..global",
+                            "path": "apNortheast1GoingGlobalWithServerlessStack/globalddb.rup12.xyz/Default/global/GET/ApiPermission.apNortheast1GoingGlobalWithServerlessStackglobalddbrup12xyzF9608CFF.GET..global"
+                          },
+                          {
+                            "id": "ApiPermission.Test.apNortheast1GoingGlobalWithServerlessStackglobalddbrup12xyzF9608CFF.GET..global",
+                            "path": "apNortheast1GoingGlobalWithServerlessStack/globalddb.rup12.xyz/Default/global/GET/ApiPermission.Test.apNortheast1GoingGlobalWithServerlessStackglobalddbrup12xyzF9608CFF.GET..global"
+                          },
+                          {
+                            "id": "Resource",
+                            "path": "apNortheast1GoingGlobalWithServerlessStack/globalddb.rup12.xyz/Default/global/GET/Resource"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "CustomDomain",
+                "path": "apNortheast1GoingGlobalWithServerlessStack/globalddb.rup12.xyz/CustomDomain",
+                "children": [
+                  {
+                    "id": "Resource",
+                    "path": "apNortheast1GoingGlobalWithServerlessStack/globalddb.rup12.xyz/CustomDomain/Resource"
+                  },
+                  {
+                    "id": "Map:--=>apNortheast1GoingGlobalWithServerlessStackglobalddbrup12xyzF9608CFF",
+                    "path": "apNortheast1GoingGlobalWithServerlessStack/globalddb.rup12.xyz/CustomDomain/Map:--=>apNortheast1GoingGlobalWithServerlessStackglobalddbrup12xyzF9608CFF",
+                    "children": [
+                      {
+                        "id": "Resource",
+                        "path": "apNortheast1GoingGlobalWithServerlessStack/globalddb.rup12.xyz/CustomDomain/Map:--=>apNortheast1GoingGlobalWithServerlessStackglobalddbrup12xyzF9608CFF/Resource"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}
