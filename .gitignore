@@ -9,3 +9,10 @@ withVPC/vendored
 withVPC/.serverless
 withVPC/env_*.yml
 withVPC/env.yml
+
+CDK/node_modules
+CDK/*.js
+CDK/!jest.config.js
+CDK/*.d.ts
+CDK/.cdk.staging
+CDK/cdk.out
