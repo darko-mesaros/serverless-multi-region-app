@@ -9,28 +9,166 @@
         "path": "Tree"
       },
       {
-        "id": "euWest1GoingGlobalWithServerlessStack",
-        "path": "euWest1GoingGlobalWithServerlessStack",
+        "id": "euWest1",
+        "path": "euWest1",
         "children": [
           {
-            "id": "ddbGlobalHandler",
-            "path": "euWest1GoingGlobalWithServerlessStack/ddbGlobalHandler",
+            "id": "VPC",
+            "path": "euWest1/VPC",
+            "children": [
+              {
+                "id": "Resource",
+                "path": "euWest1/VPC/Resource"
+              },
+              {
+                "id": "PublicSubnet1",
+                "path": "euWest1/VPC/PublicSubnet1",
+                "children": [
+                  {
+                    "id": "Subnet",
+                    "path": "euWest1/VPC/PublicSubnet1/Subnet"
+                  },
+                  {
+                    "id": "Acl",
+                    "path": "euWest1/VPC/PublicSubnet1/Acl"
+                  },
+                  {
+                    "id": "RouteTable",
+                    "path": "euWest1/VPC/PublicSubnet1/RouteTable"
+                  },
+                  {
+                    "id": "RouteTableAssociation",
+                    "path": "euWest1/VPC/PublicSubnet1/RouteTableAssociation"
+                  },
+                  {
+                    "id": "DefaultRoute",
+                    "path": "euWest1/VPC/PublicSubnet1/DefaultRoute"
+                  },
+                  {
+                    "id": "EIP",
+                    "path": "euWest1/VPC/PublicSubnet1/EIP"
+                  },
+                  {
+                    "id": "NATGateway",
+                    "path": "euWest1/VPC/PublicSubnet1/NATGateway"
+                  }
+                ]
+              },
+              {
+                "id": "PublicSubnet2",
+                "path": "euWest1/VPC/PublicSubnet2",
+                "children": [
+                  {
+                    "id": "Subnet",
+                    "path": "euWest1/VPC/PublicSubnet2/Subnet"
+                  },
+                  {
+                    "id": "Acl",
+                    "path": "euWest1/VPC/PublicSubnet2/Acl"
+                  },
+                  {
+                    "id": "RouteTable",
+                    "path": "euWest1/VPC/PublicSubnet2/RouteTable"
+                  },
+                  {
+                    "id": "RouteTableAssociation",
+                    "path": "euWest1/VPC/PublicSubnet2/RouteTableAssociation"
+                  },
+                  {
+                    "id": "DefaultRoute",
+                    "path": "euWest1/VPC/PublicSubnet2/DefaultRoute"
+                  },
+                  {
+                    "id": "EIP",
+                    "path": "euWest1/VPC/PublicSubnet2/EIP"
+                  },
+                  {
+                    "id": "NATGateway",
+                    "path": "euWest1/VPC/PublicSubnet2/NATGateway"
+                  }
+                ]
+              },
+              {
+                "id": "PrivateSubnet1",
+                "path": "euWest1/VPC/PrivateSubnet1",
+                "children": [
+                  {
+                    "id": "Subnet",
+                    "path": "euWest1/VPC/PrivateSubnet1/Subnet"
+                  },
+                  {
+                    "id": "Acl",
+                    "path": "euWest1/VPC/PrivateSubnet1/Acl"
+                  },
+                  {
+                    "id": "RouteTable",
+                    "path": "euWest1/VPC/PrivateSubnet1/RouteTable"
+                  },
+                  {
+                    "id": "RouteTableAssociation",
+                    "path": "euWest1/VPC/PrivateSubnet1/RouteTableAssociation"
+                  },
+                  {
+                    "id": "DefaultRoute",
+                    "path": "euWest1/VPC/PrivateSubnet1/DefaultRoute"
+                  }
+                ]
+              },
+              {
+                "id": "PrivateSubnet2",
+                "path": "euWest1/VPC/PrivateSubnet2",
+                "children": [
+                  {
+                    "id": "Subnet",
+                    "path": "euWest1/VPC/PrivateSubnet2/Subnet"
+                  },
+                  {
+                    "id": "Acl",
+                    "path": "euWest1/VPC/PrivateSubnet2/Acl"
+                  },
+                  {
+                    "id": "RouteTable",
+                    "path": "euWest1/VPC/PrivateSubnet2/RouteTable"
+                  },
+                  {
+                    "id": "RouteTableAssociation",
+                    "path": "euWest1/VPC/PrivateSubnet2/RouteTableAssociation"
+                  },
+                  {
+                    "id": "DefaultRoute",
+                    "path": "euWest1/VPC/PrivateSubnet2/DefaultRoute"
+                  }
+                ]
+              },
+              {
+                "id": "IGW",
+                "path": "euWest1/VPC/IGW"
+              },
+              {
+                "id": "VPCGW",
+                "path": "euWest1/VPC/VPCGW"
+              }
+            ]
+          },
+          {
+            "id": "getGlobalALB",
+            "path": "euWest1/getGlobalALB",
             "children": [
               {
                 "id": "ServiceRole",
-                "path": "euWest1GoingGlobalWithServerlessStack/ddbGlobalHandler/ServiceRole",
+                "path": "euWest1/getGlobalALB/ServiceRole",
                 "children": [
                   {
                     "id": "Resource",
-                    "path": "euWest1GoingGlobalWithServerlessStack/ddbGlobalHandler/ServiceRole/Resource"
+                    "path": "euWest1/getGlobalALB/ServiceRole/Resource"
                   },
                   {
                     "id": "DefaultPolicy",
-                    "path": "euWest1GoingGlobalWithServerlessStack/ddbGlobalHandler/ServiceRole/DefaultPolicy",
+                    "path": "euWest1/getGlobalALB/ServiceRole/DefaultPolicy",
                     "children": [
                       {
                         "id": "Resource",
-                        "path": "euWest1GoingGlobalWithServerlessStack/ddbGlobalHandler/ServiceRole/DefaultPolicy/Resource"
+                        "path": "euWest1/getGlobalALB/ServiceRole/DefaultPolicy/Resource"
                       }
                     ]
                   }
@@ -38,125 +176,213 @@
               },
               {
                 "id": "Code",
-                "path": "euWest1GoingGlobalWithServerlessStack/ddbGlobalHandler/Code",
+                "path": "euWest1/getGlobalALB/Code",
                 "children": [
                   {
                     "id": "Stage",
-                    "path": "euWest1GoingGlobalWithServerlessStack/ddbGlobalHandler/Code/Stage"
+                    "path": "euWest1/getGlobalALB/Code/Stage"
                   },
                   {
                     "id": "AssetBucket",
-                    "path": "euWest1GoingGlobalWithServerlessStack/ddbGlobalHandler/Code/AssetBucket"
+                    "path": "euWest1/getGlobalALB/Code/AssetBucket"
                   }
                 ]
               },
               {
                 "id": "Resource",
-                "path": "euWest1GoingGlobalWithServerlessStack/ddbGlobalHandler/Resource"
+                "path": "euWest1/getGlobalALB/Resource"
+              },
+              {
+                "id": "InvokeServicePrincipal(elasticloadbalancing.amazonaws.com)",
+                "path": "euWest1/getGlobalALB/InvokeServicePrincipal(elasticloadbalancing.amazonaws.com)"
               }
             ]
           },
           {
             "id": "AssetParameters",
-            "path": "euWest1GoingGlobalWithServerlessStack/AssetParameters",
+            "path": "euWest1/AssetParameters",
             "children": [
               {
-                "id": "2f8513e8f4a500e6c8fec714b559b17f323f9aeaf8c4af7fed75e975ff0575e2",
-                "path": "euWest1GoingGlobalWithServerlessStack/AssetParameters/2f8513e8f4a500e6c8fec714b559b17f323f9aeaf8c4af7fed75e975ff0575e2",
+                "id": "8210dba368dc4e035f07c2d75fb388adad44de930d9c48c8ddf64ba047421d39",
+                "path": "euWest1/AssetParameters/8210dba368dc4e035f07c2d75fb388adad44de930d9c48c8ddf64ba047421d39",
                 "children": [
                   {
                     "id": "S3Bucket",
-                    "path": "euWest1GoingGlobalWithServerlessStack/AssetParameters/2f8513e8f4a500e6c8fec714b559b17f323f9aeaf8c4af7fed75e975ff0575e2/S3Bucket"
+                    "path": "euWest1/AssetParameters/8210dba368dc4e035f07c2d75fb388adad44de930d9c48c8ddf64ba047421d39/S3Bucket"
                   },
                   {
                     "id": "S3VersionKey",
-                    "path": "euWest1GoingGlobalWithServerlessStack/AssetParameters/2f8513e8f4a500e6c8fec714b559b17f323f9aeaf8c4af7fed75e975ff0575e2/S3VersionKey"
+                    "path": "euWest1/AssetParameters/8210dba368dc4e035f07c2d75fb388adad44de930d9c48c8ddf64ba047421d39/S3VersionKey"
                   },
                   {
                     "id": "ArtifactHash",
-                    "path": "euWest1GoingGlobalWithServerlessStack/AssetParameters/2f8513e8f4a500e6c8fec714b559b17f323f9aeaf8c4af7fed75e975ff0575e2/ArtifactHash"
+                    "path": "euWest1/AssetParameters/8210dba368dc4e035f07c2d75fb388adad44de930d9c48c8ddf64ba047421d39/ArtifactHash"
                   }
                 ]
               }
             ]
           },
           {
-            "id": "Certificate",
-            "path": "euWest1GoingGlobalWithServerlessStack/Certificate"
-          },
-          {
-            "id": "globalddb.rup12.xyz",
-            "path": "euWest1GoingGlobalWithServerlessStack/globalddb.rup12.xyz",
+            "id": "LB",
+            "path": "euWest1/LB",
             "children": [
               {
                 "id": "Resource",
-                "path": "euWest1GoingGlobalWithServerlessStack/globalddb.rup12.xyz/Resource"
+                "path": "euWest1/LB/Resource"
               },
               {
-                "id": "Deployment",
-                "path": "euWest1GoingGlobalWithServerlessStack/globalddb.rup12.xyz/Deployment",
+                "id": "SecurityGroup",
+                "path": "euWest1/LB/SecurityGroup",
                 "children": [
                   {
                     "id": "Resource",
-                    "path": "euWest1GoingGlobalWithServerlessStack/globalddb.rup12.xyz/Deployment/Resource"
+                    "path": "euWest1/LB/SecurityGroup/Resource"
+                  }
+                ]
+              },
+              {
+                "id": "Listener",
+                "path": "euWest1/LB/Listener",
+                "children": [
+                  {
+                    "id": "Resource",
+                    "path": "euWest1/LB/Listener/Resource"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "lambdaTargetGroup",
+            "path": "euWest1/lambdaTargetGroup",
+            "children": [
+              {
+                "id": "Resource",
+                "path": "euWest1/lambdaTargetGroup/Resource"
+              }
+            ]
+          },
+          {
+            "id": "ddbGlobalHandler",
+            "path": "euWest1/ddbGlobalHandler",
+            "children": [
+              {
+                "id": "ServiceRole",
+                "path": "euWest1/ddbGlobalHandler/ServiceRole",
+                "children": [
+                  {
+                    "id": "Resource",
+                    "path": "euWest1/ddbGlobalHandler/ServiceRole/Resource"
+                  },
+                  {
+                    "id": "DefaultPolicy",
+                    "path": "euWest1/ddbGlobalHandler/ServiceRole/DefaultPolicy",
+                    "children": [
+                      {
+                        "id": "Resource",
+                        "path": "euWest1/ddbGlobalHandler/ServiceRole/DefaultPolicy/Resource"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "Code",
+                "path": "euWest1/ddbGlobalHandler/Code",
+                "children": [
+                  {
+                    "id": "Stage",
+                    "path": "euWest1/ddbGlobalHandler/Code/Stage"
+                  },
+                  {
+                    "id": "AssetBucket",
+                    "path": "euWest1/ddbGlobalHandler/Code/AssetBucket"
+                  }
+                ]
+              },
+              {
+                "id": "Resource",
+                "path": "euWest1/ddbGlobalHandler/Resource"
+              }
+            ]
+          },
+          {
+            "id": "Certificate",
+            "path": "euWest1/Certificate"
+          },
+          {
+            "id": "globalddb.rup12.xyz",
+            "path": "euWest1/globalddb.rup12.xyz",
+            "children": [
+              {
+                "id": "Resource",
+                "path": "euWest1/globalddb.rup12.xyz/Resource"
+              },
+              {
+                "id": "Deployment",
+                "path": "euWest1/globalddb.rup12.xyz/Deployment",
+                "children": [
+                  {
+                    "id": "Resource",
+                    "path": "euWest1/globalddb.rup12.xyz/Deployment/Resource"
                   }
                 ]
               },
               {
                 "id": "DeploymentStage.prod",
-                "path": "euWest1GoingGlobalWithServerlessStack/globalddb.rup12.xyz/DeploymentStage.prod",
+                "path": "euWest1/globalddb.rup12.xyz/DeploymentStage.prod",
                 "children": [
                   {
                     "id": "Resource",
-                    "path": "euWest1GoingGlobalWithServerlessStack/globalddb.rup12.xyz/DeploymentStage.prod/Resource"
+                    "path": "euWest1/globalddb.rup12.xyz/DeploymentStage.prod/Resource"
                   }
                 ]
               },
               {
                 "id": "Endpoint",
-                "path": "euWest1GoingGlobalWithServerlessStack/globalddb.rup12.xyz/Endpoint"
+                "path": "euWest1/globalddb.rup12.xyz/Endpoint"
               },
               {
                 "id": "CloudWatchRole",
-                "path": "euWest1GoingGlobalWithServerlessStack/globalddb.rup12.xyz/CloudWatchRole",
+                "path": "euWest1/globalddb.rup12.xyz/CloudWatchRole",
                 "children": [
                   {
                     "id": "Resource",
-                    "path": "euWest1GoingGlobalWithServerlessStack/globalddb.rup12.xyz/CloudWatchRole/Resource"
+                    "path": "euWest1/globalddb.rup12.xyz/CloudWatchRole/Resource"
                   }
                 ]
               },
               {
                 "id": "Account",
-                "path": "euWest1GoingGlobalWithServerlessStack/globalddb.rup12.xyz/Account"
+                "path": "euWest1/globalddb.rup12.xyz/Account"
               },
               {
                 "id": "Default",
-                "path": "euWest1GoingGlobalWithServerlessStack/globalddb.rup12.xyz/Default",
+                "path": "euWest1/globalddb.rup12.xyz/Default",
                 "children": [
                   {
                     "id": "global",
-                    "path": "euWest1GoingGlobalWithServerlessStack/globalddb.rup12.xyz/Default/global",
+                    "path": "euWest1/globalddb.rup12.xyz/Default/global",
                     "children": [
                       {
                         "id": "Resource",
-                        "path": "euWest1GoingGlobalWithServerlessStack/globalddb.rup12.xyz/Default/global/Resource"
+                        "path": "euWest1/globalddb.rup12.xyz/Default/global/Resource"
                       },
                       {
                         "id": "GET",
-                        "path": "euWest1GoingGlobalWithServerlessStack/globalddb.rup12.xyz/Default/global/GET",
+                        "path": "euWest1/globalddb.rup12.xyz/Default/global/GET",
                         "children": [
                           {
-                            "id": "ApiPermission.euWest1GoingGlobalWithServerlessStackglobalddbrup12xyzFAF0B5EE.GET..global",
-                            "path": "euWest1GoingGlobalWithServerlessStack/globalddb.rup12.xyz/Default/global/GET/ApiPermission.euWest1GoingGlobalWithServerlessStackglobalddbrup12xyzFAF0B5EE.GET..global"
+                            "id": "ApiPermission.euWest1globalddbrup12xyz0377C0E3.GET..global",
+                            "path": "euWest1/globalddb.rup12.xyz/Default/global/GET/ApiPermission.euWest1globalddbrup12xyz0377C0E3.GET..global"
                           },
                           {
-                            "id": "ApiPermission.Test.euWest1GoingGlobalWithServerlessStackglobalddbrup12xyzFAF0B5EE.GET..global",
-                            "path": "euWest1GoingGlobalWithServerlessStack/globalddb.rup12.xyz/Default/global/GET/ApiPermission.Test.euWest1GoingGlobalWithServerlessStackglobalddbrup12xyzFAF0B5EE.GET..global"
+                            "id": "ApiPermission.Test.euWest1globalddbrup12xyz0377C0E3.GET..global",
+                            "path": "euWest1/globalddb.rup12.xyz/Default/global/GET/ApiPermission.Test.euWest1globalddbrup12xyz0377C0E3.GET..global"
                           },
                           {
                             "id": "Resource",
-                            "path": "euWest1GoingGlobalWithServerlessStack/globalddb.rup12.xyz/Default/global/GET/Resource"
+                            "path": "euWest1/globalddb.rup12.xyz/Default/global/GET/Resource"
                           }
                         ]
                       }
@@ -166,19 +392,19 @@
               },
               {
                 "id": "CustomDomain",
-                "path": "euWest1GoingGlobalWithServerlessStack/globalddb.rup12.xyz/CustomDomain",
+                "path": "euWest1/globalddb.rup12.xyz/CustomDomain",
                 "children": [
                   {
                     "id": "Resource",
-                    "path": "euWest1GoingGlobalWithServerlessStack/globalddb.rup12.xyz/CustomDomain/Resource"
+                    "path": "euWest1/globalddb.rup12.xyz/CustomDomain/Resource"
                   },
                   {
-                    "id": "Map:--=>euWest1GoingGlobalWithServerlessStackglobalddbrup12xyzFAF0B5EE",
-                    "path": "euWest1GoingGlobalWithServerlessStack/globalddb.rup12.xyz/CustomDomain/Map:--=>euWest1GoingGlobalWithServerlessStackglobalddbrup12xyzFAF0B5EE",
+                    "id": "Map:--=>euWest1globalddbrup12xyz0377C0E3",
+                    "path": "euWest1/globalddb.rup12.xyz/CustomDomain/Map:--=>euWest1globalddbrup12xyz0377C0E3",
                     "children": [
                       {
                         "id": "Resource",
-                        "path": "euWest1GoingGlobalWithServerlessStack/globalddb.rup12.xyz/CustomDomain/Map:--=>euWest1GoingGlobalWithServerlessStackglobalddbrup12xyzFAF0B5EE/Resource"
+                        "path": "euWest1/globalddb.rup12.xyz/CustomDomain/Map:--=>euWest1globalddbrup12xyz0377C0E3/Resource"
                       }
                     ]
                   }
@@ -189,28 +415,166 @@
         ]
       },
       {
-        "id": "usEast1GoingGlobalWithServerlessStack",
-        "path": "usEast1GoingGlobalWithServerlessStack",
+        "id": "usEast1",
+        "path": "usEast1",
         "children": [
           {
-            "id": "ddbGlobalHandler",
-            "path": "usEast1GoingGlobalWithServerlessStack/ddbGlobalHandler",
+            "id": "VPC",
+            "path": "usEast1/VPC",
+            "children": [
+              {
+                "id": "Resource",
+                "path": "usEast1/VPC/Resource"
+              },
+              {
+                "id": "PublicSubnet1",
+                "path": "usEast1/VPC/PublicSubnet1",
+                "children": [
+                  {
+                    "id": "Subnet",
+                    "path": "usEast1/VPC/PublicSubnet1/Subnet"
+                  },
+                  {
+                    "id": "Acl",
+                    "path": "usEast1/VPC/PublicSubnet1/Acl"
+                  },
+                  {
+                    "id": "RouteTable",
+                    "path": "usEast1/VPC/PublicSubnet1/RouteTable"
+                  },
+                  {
+                    "id": "RouteTableAssociation",
+                    "path": "usEast1/VPC/PublicSubnet1/RouteTableAssociation"
+                  },
+                  {
+                    "id": "DefaultRoute",
+                    "path": "usEast1/VPC/PublicSubnet1/DefaultRoute"
+                  },
+                  {
+                    "id": "EIP",
+                    "path": "usEast1/VPC/PublicSubnet1/EIP"
+                  },
+                  {
+                    "id": "NATGateway",
+                    "path": "usEast1/VPC/PublicSubnet1/NATGateway"
+                  }
+                ]
+              },
+              {
+                "id": "PublicSubnet2",
+                "path": "usEast1/VPC/PublicSubnet2",
+                "children": [
+                  {
+                    "id": "Subnet",
+                    "path": "usEast1/VPC/PublicSubnet2/Subnet"
+                  },
+                  {
+                    "id": "Acl",
+                    "path": "usEast1/VPC/PublicSubnet2/Acl"
+                  },
+                  {
+                    "id": "RouteTable",
+                    "path": "usEast1/VPC/PublicSubnet2/RouteTable"
+                  },
+                  {
+                    "id": "RouteTableAssociation",
+                    "path": "usEast1/VPC/PublicSubnet2/RouteTableAssociation"
+                  },
+                  {
+                    "id": "DefaultRoute",
+                    "path": "usEast1/VPC/PublicSubnet2/DefaultRoute"
+                  },
+                  {
+                    "id": "EIP",
+                    "path": "usEast1/VPC/PublicSubnet2/EIP"
+                  },
+                  {
+                    "id": "NATGateway",
+                    "path": "usEast1/VPC/PublicSubnet2/NATGateway"
+                  }
+                ]
+              },
+              {
+                "id": "PrivateSubnet1",
+                "path": "usEast1/VPC/PrivateSubnet1",
+                "children": [
+                  {
+                    "id": "Subnet",
+                    "path": "usEast1/VPC/PrivateSubnet1/Subnet"
+                  },
+                  {
+                    "id": "Acl",
+                    "path": "usEast1/VPC/PrivateSubnet1/Acl"
+                  },
+                  {
+                    "id": "RouteTable",
+                    "path": "usEast1/VPC/PrivateSubnet1/RouteTable"
+                  },
+                  {
+                    "id": "RouteTableAssociation",
+                    "path": "usEast1/VPC/PrivateSubnet1/RouteTableAssociation"
+                  },
+                  {
+                    "id": "DefaultRoute",
+                    "path": "usEast1/VPC/PrivateSubnet1/DefaultRoute"
+                  }
+                ]
+              },
+              {
+                "id": "PrivateSubnet2",
+                "path": "usEast1/VPC/PrivateSubnet2",
+                "children": [
+                  {
+                    "id": "Subnet",
+                    "path": "usEast1/VPC/PrivateSubnet2/Subnet"
+                  },
+                  {
+                    "id": "Acl",
+                    "path": "usEast1/VPC/PrivateSubnet2/Acl"
+                  },
+                  {
+                    "id": "RouteTable",
+                    "path": "usEast1/VPC/PrivateSubnet2/RouteTable"
+                  },
+                  {
+                    "id": "RouteTableAssociation",
+                    "path": "usEast1/VPC/PrivateSubnet2/RouteTableAssociation"
+                  },
+                  {
+                    "id": "DefaultRoute",
+                    "path": "usEast1/VPC/PrivateSubnet2/DefaultRoute"
+                  }
+                ]
+              },
+              {
+                "id": "IGW",
+                "path": "usEast1/VPC/IGW"
+              },
+              {
+                "id": "VPCGW",
+                "path": "usEast1/VPC/VPCGW"
+              }
+            ]
+          },
+          {
+            "id": "getGlobalALB",
+            "path": "usEast1/getGlobalALB",
             "children": [
               {
                 "id": "ServiceRole",
-                "path": "usEast1GoingGlobalWithServerlessStack/ddbGlobalHandler/ServiceRole",
+                "path": "usEast1/getGlobalALB/ServiceRole",
                 "children": [
                   {
                     "id": "Resource",
-                    "path": "usEast1GoingGlobalWithServerlessStack/ddbGlobalHandler/ServiceRole/Resource"
+                    "path": "usEast1/getGlobalALB/ServiceRole/Resource"
                   },
                   {
                     "id": "DefaultPolicy",
-                    "path": "usEast1GoingGlobalWithServerlessStack/ddbGlobalHandler/ServiceRole/DefaultPolicy",
+                    "path": "usEast1/getGlobalALB/ServiceRole/DefaultPolicy",
                     "children": [
                       {
                         "id": "Resource",
-                        "path": "usEast1GoingGlobalWithServerlessStack/ddbGlobalHandler/ServiceRole/DefaultPolicy/Resource"
+                        "path": "usEast1/getGlobalALB/ServiceRole/DefaultPolicy/Resource"
                       }
                     ]
                   }
@@ -218,125 +582,213 @@
               },
               {
                 "id": "Code",
-                "path": "usEast1GoingGlobalWithServerlessStack/ddbGlobalHandler/Code",
+                "path": "usEast1/getGlobalALB/Code",
                 "children": [
                   {
                     "id": "Stage",
-                    "path": "usEast1GoingGlobalWithServerlessStack/ddbGlobalHandler/Code/Stage"
+                    "path": "usEast1/getGlobalALB/Code/Stage"
                   },
                   {
                     "id": "AssetBucket",
-                    "path": "usEast1GoingGlobalWithServerlessStack/ddbGlobalHandler/Code/AssetBucket"
+                    "path": "usEast1/getGlobalALB/Code/AssetBucket"
                   }
                 ]
               },
               {
                 "id": "Resource",
-                "path": "usEast1GoingGlobalWithServerlessStack/ddbGlobalHandler/Resource"
+                "path": "usEast1/getGlobalALB/Resource"
+              },
+              {
+                "id": "InvokeServicePrincipal(elasticloadbalancing.amazonaws.com)",
+                "path": "usEast1/getGlobalALB/InvokeServicePrincipal(elasticloadbalancing.amazonaws.com)"
               }
             ]
           },
           {
             "id": "AssetParameters",
-            "path": "usEast1GoingGlobalWithServerlessStack/AssetParameters",
+            "path": "usEast1/AssetParameters",
             "children": [
               {
-                "id": "2f8513e8f4a500e6c8fec714b559b17f323f9aeaf8c4af7fed75e975ff0575e2",
-                "path": "usEast1GoingGlobalWithServerlessStack/AssetParameters/2f8513e8f4a500e6c8fec714b559b17f323f9aeaf8c4af7fed75e975ff0575e2",
+                "id": "8210dba368dc4e035f07c2d75fb388adad44de930d9c48c8ddf64ba047421d39",
+                "path": "usEast1/AssetParameters/8210dba368dc4e035f07c2d75fb388adad44de930d9c48c8ddf64ba047421d39",
                 "children": [
                   {
                     "id": "S3Bucket",
-                    "path": "usEast1GoingGlobalWithServerlessStack/AssetParameters/2f8513e8f4a500e6c8fec714b559b17f323f9aeaf8c4af7fed75e975ff0575e2/S3Bucket"
+                    "path": "usEast1/AssetParameters/8210dba368dc4e035f07c2d75fb388adad44de930d9c48c8ddf64ba047421d39/S3Bucket"
                   },
                   {
                     "id": "S3VersionKey",
-                    "path": "usEast1GoingGlobalWithServerlessStack/AssetParameters/2f8513e8f4a500e6c8fec714b559b17f323f9aeaf8c4af7fed75e975ff0575e2/S3VersionKey"
+                    "path": "usEast1/AssetParameters/8210dba368dc4e035f07c2d75fb388adad44de930d9c48c8ddf64ba047421d39/S3VersionKey"
                   },
                   {
                     "id": "ArtifactHash",
-                    "path": "usEast1GoingGlobalWithServerlessStack/AssetParameters/2f8513e8f4a500e6c8fec714b559b17f323f9aeaf8c4af7fed75e975ff0575e2/ArtifactHash"
+                    "path": "usEast1/AssetParameters/8210dba368dc4e035f07c2d75fb388adad44de930d9c48c8ddf64ba047421d39/ArtifactHash"
                   }
                 ]
               }
             ]
           },
           {
-            "id": "Certificate",
-            "path": "usEast1GoingGlobalWithServerlessStack/Certificate"
-          },
-          {
-            "id": "globalddb.rup12.xyz",
-            "path": "usEast1GoingGlobalWithServerlessStack/globalddb.rup12.xyz",
+            "id": "LB",
+            "path": "usEast1/LB",
             "children": [
               {
                 "id": "Resource",
-                "path": "usEast1GoingGlobalWithServerlessStack/globalddb.rup12.xyz/Resource"
+                "path": "usEast1/LB/Resource"
               },
               {
-                "id": "Deployment",
-                "path": "usEast1GoingGlobalWithServerlessStack/globalddb.rup12.xyz/Deployment",
+                "id": "SecurityGroup",
+                "path": "usEast1/LB/SecurityGroup",
                 "children": [
                   {
                     "id": "Resource",
-                    "path": "usEast1GoingGlobalWithServerlessStack/globalddb.rup12.xyz/Deployment/Resource"
+                    "path": "usEast1/LB/SecurityGroup/Resource"
+                  }
+                ]
+              },
+              {
+                "id": "Listener",
+                "path": "usEast1/LB/Listener",
+                "children": [
+                  {
+                    "id": "Resource",
+                    "path": "usEast1/LB/Listener/Resource"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "lambdaTargetGroup",
+            "path": "usEast1/lambdaTargetGroup",
+            "children": [
+              {
+                "id": "Resource",
+                "path": "usEast1/lambdaTargetGroup/Resource"
+              }
+            ]
+          },
+          {
+            "id": "ddbGlobalHandler",
+            "path": "usEast1/ddbGlobalHandler",
+            "children": [
+              {
+                "id": "ServiceRole",
+                "path": "usEast1/ddbGlobalHandler/ServiceRole",
+                "children": [
+                  {
+                    "id": "Resource",
+                    "path": "usEast1/ddbGlobalHandler/ServiceRole/Resource"
+                  },
+                  {
+                    "id": "DefaultPolicy",
+                    "path": "usEast1/ddbGlobalHandler/ServiceRole/DefaultPolicy",
+                    "children": [
+                      {
+                        "id": "Resource",
+                        "path": "usEast1/ddbGlobalHandler/ServiceRole/DefaultPolicy/Resource"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "Code",
+                "path": "usEast1/ddbGlobalHandler/Code",
+                "children": [
+                  {
+                    "id": "Stage",
+                    "path": "usEast1/ddbGlobalHandler/Code/Stage"
+                  },
+                  {
+                    "id": "AssetBucket",
+                    "path": "usEast1/ddbGlobalHandler/Code/AssetBucket"
+                  }
+                ]
+              },
+              {
+                "id": "Resource",
+                "path": "usEast1/ddbGlobalHandler/Resource"
+              }
+            ]
+          },
+          {
+            "id": "Certificate",
+            "path": "usEast1/Certificate"
+          },
+          {
+            "id": "globalddb.rup12.xyz",
+            "path": "usEast1/globalddb.rup12.xyz",
+            "children": [
+              {
+                "id": "Resource",
+                "path": "usEast1/globalddb.rup12.xyz/Resource"
+              },
+              {
+                "id": "Deployment",
+                "path": "usEast1/globalddb.rup12.xyz/Deployment",
+                "children": [
+                  {
+                    "id": "Resource",
+                    "path": "usEast1/globalddb.rup12.xyz/Deployment/Resource"
                   }
                 ]
               },
               {
                 "id": "DeploymentStage.prod",
-                "path": "usEast1GoingGlobalWithServerlessStack/globalddb.rup12.xyz/DeploymentStage.prod",
+                "path": "usEast1/globalddb.rup12.xyz/DeploymentStage.prod",
                 "children": [
                   {
                     "id": "Resource",
-                    "path": "usEast1GoingGlobalWithServerlessStack/globalddb.rup12.xyz/DeploymentStage.prod/Resource"
+                    "path": "usEast1/globalddb.rup12.xyz/DeploymentStage.prod/Resource"
                   }
                 ]
               },
               {
                 "id": "Endpoint",
-                "path": "usEast1GoingGlobalWithServerlessStack/globalddb.rup12.xyz/Endpoint"
+                "path": "usEast1/globalddb.rup12.xyz/Endpoint"
               },
               {
                 "id": "CloudWatchRole",
-                "path": "usEast1GoingGlobalWithServerlessStack/globalddb.rup12.xyz/CloudWatchRole",
+                "path": "usEast1/globalddb.rup12.xyz/CloudWatchRole",
                 "children": [
                   {
                     "id": "Resource",
-                    "path": "usEast1GoingGlobalWithServerlessStack/globalddb.rup12.xyz/CloudWatchRole/Resource"
+                    "path": "usEast1/globalddb.rup12.xyz/CloudWatchRole/Resource"
                   }
                 ]
               },
               {
                 "id": "Account",
-                "path": "usEast1GoingGlobalWithServerlessStack/globalddb.rup12.xyz/Account"
+                "path": "usEast1/globalddb.rup12.xyz/Account"
               },
               {
                 "id": "Default",
-                "path": "usEast1GoingGlobalWithServerlessStack/globalddb.rup12.xyz/Default",
+                "path": "usEast1/globalddb.rup12.xyz/Default",
                 "children": [
                   {
                     "id": "global",
-                    "path": "usEast1GoingGlobalWithServerlessStack/globalddb.rup12.xyz/Default/global",
+                    "path": "usEast1/globalddb.rup12.xyz/Default/global",
                     "children": [
                       {
                         "id": "Resource",
-                        "path": "usEast1GoingGlobalWithServerlessStack/globalddb.rup12.xyz/Default/global/Resource"
+                        "path": "usEast1/globalddb.rup12.xyz/Default/global/Resource"
                       },
                       {
                         "id": "GET",
-                        "path": "usEast1GoingGlobalWithServerlessStack/globalddb.rup12.xyz/Default/global/GET",
+                        "path": "usEast1/globalddb.rup12.xyz/Default/global/GET",
                         "children": [
                           {
-                            "id": "ApiPermission.usEast1GoingGlobalWithServerlessStackglobalddbrup12xyz2A1269D6.GET..global",
-                            "path": "usEast1GoingGlobalWithServerlessStack/globalddb.rup12.xyz/Default/global/GET/ApiPermission.usEast1GoingGlobalWithServerlessStackglobalddbrup12xyz2A1269D6.GET..global"
+                            "id": "ApiPermission.usEast1globalddbrup12xyz0F4CC3D9.GET..global",
+                            "path": "usEast1/globalddb.rup12.xyz/Default/global/GET/ApiPermission.usEast1globalddbrup12xyz0F4CC3D9.GET..global"
                           },
                           {
-                            "id": "ApiPermission.Test.usEast1GoingGlobalWithServerlessStackglobalddbrup12xyz2A1269D6.GET..global",
-                            "path": "usEast1GoingGlobalWithServerlessStack/globalddb.rup12.xyz/Default/global/GET/ApiPermission.Test.usEast1GoingGlobalWithServerlessStackglobalddbrup12xyz2A1269D6.GET..global"
+                            "id": "ApiPermission.Test.usEast1globalddbrup12xyz0F4CC3D9.GET..global",
+                            "path": "usEast1/globalddb.rup12.xyz/Default/global/GET/ApiPermission.Test.usEast1globalddbrup12xyz0F4CC3D9.GET..global"
                           },
                           {
                             "id": "Resource",
-                            "path": "usEast1GoingGlobalWithServerlessStack/globalddb.rup12.xyz/Default/global/GET/Resource"
+                            "path": "usEast1/globalddb.rup12.xyz/Default/global/GET/Resource"
                           }
                         ]
                       }
@@ -346,19 +798,19 @@
               },
               {
                 "id": "CustomDomain",
-                "path": "usEast1GoingGlobalWithServerlessStack/globalddb.rup12.xyz/CustomDomain",
+                "path": "usEast1/globalddb.rup12.xyz/CustomDomain",
                 "children": [
                   {
                     "id": "Resource",
-                    "path": "usEast1GoingGlobalWithServerlessStack/globalddb.rup12.xyz/CustomDomain/Resource"
+                    "path": "usEast1/globalddb.rup12.xyz/CustomDomain/Resource"
                   },
                   {
-                    "id": "Map:--=>usEast1GoingGlobalWithServerlessStackglobalddbrup12xyz2A1269D6",
-                    "path": "usEast1GoingGlobalWithServerlessStack/globalddb.rup12.xyz/CustomDomain/Map:--=>usEast1GoingGlobalWithServerlessStackglobalddbrup12xyz2A1269D6",
+                    "id": "Map:--=>usEast1globalddbrup12xyz0F4CC3D9",
+                    "path": "usEast1/globalddb.rup12.xyz/CustomDomain/Map:--=>usEast1globalddbrup12xyz0F4CC3D9",
                     "children": [
                       {
                         "id": "Resource",
-                        "path": "usEast1GoingGlobalWithServerlessStack/globalddb.rup12.xyz/CustomDomain/Map:--=>usEast1GoingGlobalWithServerlessStackglobalddbrup12xyz2A1269D6/Resource"
+                        "path": "usEast1/globalddb.rup12.xyz/CustomDomain/Map:--=>usEast1globalddbrup12xyz0F4CC3D9/Resource"
                       }
                     ]
                   }
@@ -369,28 +821,166 @@
         ]
       },
       {
-        "id": "usWest1GoingGlobalWithServerlessStack",
-        "path": "usWest1GoingGlobalWithServerlessStack",
+        "id": "usWest1",
+        "path": "usWest1",
         "children": [
           {
-            "id": "ddbGlobalHandler",
-            "path": "usWest1GoingGlobalWithServerlessStack/ddbGlobalHandler",
+            "id": "VPC",
+            "path": "usWest1/VPC",
+            "children": [
+              {
+                "id": "Resource",
+                "path": "usWest1/VPC/Resource"
+              },
+              {
+                "id": "PublicSubnet1",
+                "path": "usWest1/VPC/PublicSubnet1",
+                "children": [
+                  {
+                    "id": "Subnet",
+                    "path": "usWest1/VPC/PublicSubnet1/Subnet"
+                  },
+                  {
+                    "id": "Acl",
+                    "path": "usWest1/VPC/PublicSubnet1/Acl"
+                  },
+                  {
+                    "id": "RouteTable",
+                    "path": "usWest1/VPC/PublicSubnet1/RouteTable"
+                  },
+                  {
+                    "id": "RouteTableAssociation",
+                    "path": "usWest1/VPC/PublicSubnet1/RouteTableAssociation"
+                  },
+                  {
+                    "id": "DefaultRoute",
+                    "path": "usWest1/VPC/PublicSubnet1/DefaultRoute"
+                  },
+                  {
+                    "id": "EIP",
+                    "path": "usWest1/VPC/PublicSubnet1/EIP"
+                  },
+                  {
+                    "id": "NATGateway",
+                    "path": "usWest1/VPC/PublicSubnet1/NATGateway"
+                  }
+                ]
+              },
+              {
+                "id": "PublicSubnet2",
+                "path": "usWest1/VPC/PublicSubnet2",
+                "children": [
+                  {
+                    "id": "Subnet",
+                    "path": "usWest1/VPC/PublicSubnet2/Subnet"
+                  },
+                  {
+                    "id": "Acl",
+                    "path": "usWest1/VPC/PublicSubnet2/Acl"
+                  },
+                  {
+                    "id": "RouteTable",
+                    "path": "usWest1/VPC/PublicSubnet2/RouteTable"
+                  },
+                  {
+                    "id": "RouteTableAssociation",
+                    "path": "usWest1/VPC/PublicSubnet2/RouteTableAssociation"
+                  },
+                  {
+                    "id": "DefaultRoute",
+                    "path": "usWest1/VPC/PublicSubnet2/DefaultRoute"
+                  },
+                  {
+                    "id": "EIP",
+                    "path": "usWest1/VPC/PublicSubnet2/EIP"
+                  },
+                  {
+                    "id": "NATGateway",
+                    "path": "usWest1/VPC/PublicSubnet2/NATGateway"
+                  }
+                ]
+              },
+              {
+                "id": "PrivateSubnet1",
+                "path": "usWest1/VPC/PrivateSubnet1",
+                "children": [
+                  {
+                    "id": "Subnet",
+                    "path": "usWest1/VPC/PrivateSubnet1/Subnet"
+                  },
+                  {
+                    "id": "Acl",
+                    "path": "usWest1/VPC/PrivateSubnet1/Acl"
+                  },
+                  {
+                    "id": "RouteTable",
+                    "path": "usWest1/VPC/PrivateSubnet1/RouteTable"
+                  },
+                  {
+                    "id": "RouteTableAssociation",
+                    "path": "usWest1/VPC/PrivateSubnet1/RouteTableAssociation"
+                  },
+                  {
+                    "id": "DefaultRoute",
+                    "path": "usWest1/VPC/PrivateSubnet1/DefaultRoute"
+                  }
+                ]
+              },
+              {
+                "id": "PrivateSubnet2",
+                "path": "usWest1/VPC/PrivateSubnet2",
+                "children": [
+                  {
+                    "id": "Subnet",
+                    "path": "usWest1/VPC/PrivateSubnet2/Subnet"
+                  },
+                  {
+                    "id": "Acl",
+                    "path": "usWest1/VPC/PrivateSubnet2/Acl"
+                  },
+                  {
+                    "id": "RouteTable",
+                    "path": "usWest1/VPC/PrivateSubnet2/RouteTable"
+                  },
+                  {
+                    "id": "RouteTableAssociation",
+                    "path": "usWest1/VPC/PrivateSubnet2/RouteTableAssociation"
+                  },
+                  {
+                    "id": "DefaultRoute",
+                    "path": "usWest1/VPC/PrivateSubnet2/DefaultRoute"
+                  }
+                ]
+              },
+              {
+                "id": "IGW",
+                "path": "usWest1/VPC/IGW"
+              },
+              {
+                "id": "VPCGW",
+                "path": "usWest1/VPC/VPCGW"
+              }
+            ]
+          },
+          {
+            "id": "getGlobalALB",
+            "path": "usWest1/getGlobalALB",
             "children": [
               {
                 "id": "ServiceRole",
-                "path": "usWest1GoingGlobalWithServerlessStack/ddbGlobalHandler/ServiceRole",
+                "path": "usWest1/getGlobalALB/ServiceRole",
                 "children": [
                   {
                     "id": "Resource",
-                    "path": "usWest1GoingGlobalWithServerlessStack/ddbGlobalHandler/ServiceRole/Resource"
+                    "path": "usWest1/getGlobalALB/ServiceRole/Resource"
                   },
                   {
                     "id": "DefaultPolicy",
-                    "path": "usWest1GoingGlobalWithServerlessStack/ddbGlobalHandler/ServiceRole/DefaultPolicy",
+                    "path": "usWest1/getGlobalALB/ServiceRole/DefaultPolicy",
                     "children": [
                       {
                         "id": "Resource",
-                        "path": "usWest1GoingGlobalWithServerlessStack/ddbGlobalHandler/ServiceRole/DefaultPolicy/Resource"
+                        "path": "usWest1/getGlobalALB/ServiceRole/DefaultPolicy/Resource"
                       }
                     ]
                   }
@@ -398,125 +988,213 @@
               },
               {
                 "id": "Code",
-                "path": "usWest1GoingGlobalWithServerlessStack/ddbGlobalHandler/Code",
+                "path": "usWest1/getGlobalALB/Code",
                 "children": [
                   {
                     "id": "Stage",
-                    "path": "usWest1GoingGlobalWithServerlessStack/ddbGlobalHandler/Code/Stage"
+                    "path": "usWest1/getGlobalALB/Code/Stage"
                   },
                   {
                     "id": "AssetBucket",
-                    "path": "usWest1GoingGlobalWithServerlessStack/ddbGlobalHandler/Code/AssetBucket"
+                    "path": "usWest1/getGlobalALB/Code/AssetBucket"
                   }
                 ]
               },
               {
                 "id": "Resource",
-                "path": "usWest1GoingGlobalWithServerlessStack/ddbGlobalHandler/Resource"
+                "path": "usWest1/getGlobalALB/Resource"
+              },
+              {
+                "id": "InvokeServicePrincipal(elasticloadbalancing.amazonaws.com)",
+                "path": "usWest1/getGlobalALB/InvokeServicePrincipal(elasticloadbalancing.amazonaws.com)"
               }
             ]
           },
           {
             "id": "AssetParameters",
-            "path": "usWest1GoingGlobalWithServerlessStack/AssetParameters",
+            "path": "usWest1/AssetParameters",
             "children": [
               {
-                "id": "2f8513e8f4a500e6c8fec714b559b17f323f9aeaf8c4af7fed75e975ff0575e2",
-                "path": "usWest1GoingGlobalWithServerlessStack/AssetParameters/2f8513e8f4a500e6c8fec714b559b17f323f9aeaf8c4af7fed75e975ff0575e2",
+                "id": "8210dba368dc4e035f07c2d75fb388adad44de930d9c48c8ddf64ba047421d39",
+                "path": "usWest1/AssetParameters/8210dba368dc4e035f07c2d75fb388adad44de930d9c48c8ddf64ba047421d39",
                 "children": [
                   {
                     "id": "S3Bucket",
-                    "path": "usWest1GoingGlobalWithServerlessStack/AssetParameters/2f8513e8f4a500e6c8fec714b559b17f323f9aeaf8c4af7fed75e975ff0575e2/S3Bucket"
+                    "path": "usWest1/AssetParameters/8210dba368dc4e035f07c2d75fb388adad44de930d9c48c8ddf64ba047421d39/S3Bucket"
                   },
                   {
                     "id": "S3VersionKey",
-                    "path": "usWest1GoingGlobalWithServerlessStack/AssetParameters/2f8513e8f4a500e6c8fec714b559b17f323f9aeaf8c4af7fed75e975ff0575e2/S3VersionKey"
+                    "path": "usWest1/AssetParameters/8210dba368dc4e035f07c2d75fb388adad44de930d9c48c8ddf64ba047421d39/S3VersionKey"
                   },
                   {
                     "id": "ArtifactHash",
-                    "path": "usWest1GoingGlobalWithServerlessStack/AssetParameters/2f8513e8f4a500e6c8fec714b559b17f323f9aeaf8c4af7fed75e975ff0575e2/ArtifactHash"
+                    "path": "usWest1/AssetParameters/8210dba368dc4e035f07c2d75fb388adad44de930d9c48c8ddf64ba047421d39/ArtifactHash"
                   }
                 ]
               }
             ]
           },
           {
-            "id": "Certificate",
-            "path": "usWest1GoingGlobalWithServerlessStack/Certificate"
-          },
-          {
-            "id": "globalddb.rup12.xyz",
-            "path": "usWest1GoingGlobalWithServerlessStack/globalddb.rup12.xyz",
+            "id": "LB",
+            "path": "usWest1/LB",
             "children": [
               {
                 "id": "Resource",
-                "path": "usWest1GoingGlobalWithServerlessStack/globalddb.rup12.xyz/Resource"
+                "path": "usWest1/LB/Resource"
               },
               {
-                "id": "Deployment",
-                "path": "usWest1GoingGlobalWithServerlessStack/globalddb.rup12.xyz/Deployment",
+                "id": "SecurityGroup",
+                "path": "usWest1/LB/SecurityGroup",
                 "children": [
                   {
                     "id": "Resource",
-                    "path": "usWest1GoingGlobalWithServerlessStack/globalddb.rup12.xyz/Deployment/Resource"
+                    "path": "usWest1/LB/SecurityGroup/Resource"
+                  }
+                ]
+              },
+              {
+                "id": "Listener",
+                "path": "usWest1/LB/Listener",
+                "children": [
+                  {
+                    "id": "Resource",
+                    "path": "usWest1/LB/Listener/Resource"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "lambdaTargetGroup",
+            "path": "usWest1/lambdaTargetGroup",
+            "children": [
+              {
+                "id": "Resource",
+                "path": "usWest1/lambdaTargetGroup/Resource"
+              }
+            ]
+          },
+          {
+            "id": "ddbGlobalHandler",
+            "path": "usWest1/ddbGlobalHandler",
+            "children": [
+              {
+                "id": "ServiceRole",
+                "path": "usWest1/ddbGlobalHandler/ServiceRole",
+                "children": [
+                  {
+                    "id": "Resource",
+                    "path": "usWest1/ddbGlobalHandler/ServiceRole/Resource"
+                  },
+                  {
+                    "id": "DefaultPolicy",
+                    "path": "usWest1/ddbGlobalHandler/ServiceRole/DefaultPolicy",
+                    "children": [
+                      {
+                        "id": "Resource",
+                        "path": "usWest1/ddbGlobalHandler/ServiceRole/DefaultPolicy/Resource"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "Code",
+                "path": "usWest1/ddbGlobalHandler/Code",
+                "children": [
+                  {
+                    "id": "Stage",
+                    "path": "usWest1/ddbGlobalHandler/Code/Stage"
+                  },
+                  {
+                    "id": "AssetBucket",
+                    "path": "usWest1/ddbGlobalHandler/Code/AssetBucket"
+                  }
+                ]
+              },
+              {
+                "id": "Resource",
+                "path": "usWest1/ddbGlobalHandler/Resource"
+              }
+            ]
+          },
+          {
+            "id": "Certificate",
+            "path": "usWest1/Certificate"
+          },
+          {
+            "id": "globalddb.rup12.xyz",
+            "path": "usWest1/globalddb.rup12.xyz",
+            "children": [
+              {
+                "id": "Resource",
+                "path": "usWest1/globalddb.rup12.xyz/Resource"
+              },
+              {
+                "id": "Deployment",
+                "path": "usWest1/globalddb.rup12.xyz/Deployment",
+                "children": [
+                  {
+                    "id": "Resource",
+                    "path": "usWest1/globalddb.rup12.xyz/Deployment/Resource"
                   }
                 ]
               },
               {
                 "id": "DeploymentStage.prod",
-                "path": "usWest1GoingGlobalWithServerlessStack/globalddb.rup12.xyz/DeploymentStage.prod",
+                "path": "usWest1/globalddb.rup12.xyz/DeploymentStage.prod",
                 "children": [
                   {
                     "id": "Resource",
-                    "path": "usWest1GoingGlobalWithServerlessStack/globalddb.rup12.xyz/DeploymentStage.prod/Resource"
+                    "path": "usWest1/globalddb.rup12.xyz/DeploymentStage.prod/Resource"
                   }
                 ]
               },
               {
                 "id": "Endpoint",
-                "path": "usWest1GoingGlobalWithServerlessStack/globalddb.rup12.xyz/Endpoint"
+                "path": "usWest1/globalddb.rup12.xyz/Endpoint"
               },
               {
                 "id": "CloudWatchRole",
-                "path": "usWest1GoingGlobalWithServerlessStack/globalddb.rup12.xyz/CloudWatchRole",
+                "path": "usWest1/globalddb.rup12.xyz/CloudWatchRole",
                 "children": [
                   {
                     "id": "Resource",
-                    "path": "usWest1GoingGlobalWithServerlessStack/globalddb.rup12.xyz/CloudWatchRole/Resource"
+                    "path": "usWest1/globalddb.rup12.xyz/CloudWatchRole/Resource"
                   }
                 ]
               },
               {
                 "id": "Account",
-                "path": "usWest1GoingGlobalWithServerlessStack/globalddb.rup12.xyz/Account"
+                "path": "usWest1/globalddb.rup12.xyz/Account"
               },
               {
                 "id": "Default",
-                "path": "usWest1GoingGlobalWithServerlessStack/globalddb.rup12.xyz/Default",
+                "path": "usWest1/globalddb.rup12.xyz/Default",
                 "children": [
                   {
                     "id": "global",
-                    "path": "usWest1GoingGlobalWithServerlessStack/globalddb.rup12.xyz/Default/global",
+                    "path": "usWest1/globalddb.rup12.xyz/Default/global",
                     "children": [
                       {
                         "id": "Resource",
-                        "path": "usWest1GoingGlobalWithServerlessStack/globalddb.rup12.xyz/Default/global/Resource"
+                        "path": "usWest1/globalddb.rup12.xyz/Default/global/Resource"
                       },
                       {
                         "id": "GET",
-                        "path": "usWest1GoingGlobalWithServerlessStack/globalddb.rup12.xyz/Default/global/GET",
+                        "path": "usWest1/globalddb.rup12.xyz/Default/global/GET",
                         "children": [
                           {
-                            "id": "ApiPermission.usWest1GoingGlobalWithServerlessStackglobalddbrup12xyzBC29576D.GET..global",
-                            "path": "usWest1GoingGlobalWithServerlessStack/globalddb.rup12.xyz/Default/global/GET/ApiPermission.usWest1GoingGlobalWithServerlessStackglobalddbrup12xyzBC29576D.GET..global"
+                            "id": "ApiPermission.usWest1globalddbrup12xyz9E3A0DD2.GET..global",
+                            "path": "usWest1/globalddb.rup12.xyz/Default/global/GET/ApiPermission.usWest1globalddbrup12xyz9E3A0DD2.GET..global"
                           },
                           {
-                            "id": "ApiPermission.Test.usWest1GoingGlobalWithServerlessStackglobalddbrup12xyzBC29576D.GET..global",
-                            "path": "usWest1GoingGlobalWithServerlessStack/globalddb.rup12.xyz/Default/global/GET/ApiPermission.Test.usWest1GoingGlobalWithServerlessStackglobalddbrup12xyzBC29576D.GET..global"
+                            "id": "ApiPermission.Test.usWest1globalddbrup12xyz9E3A0DD2.GET..global",
+                            "path": "usWest1/globalddb.rup12.xyz/Default/global/GET/ApiPermission.Test.usWest1globalddbrup12xyz9E3A0DD2.GET..global"
                           },
                           {
                             "id": "Resource",
-                            "path": "usWest1GoingGlobalWithServerlessStack/globalddb.rup12.xyz/Default/global/GET/Resource"
+                            "path": "usWest1/globalddb.rup12.xyz/Default/global/GET/Resource"
                           }
                         ]
                       }
@@ -526,19 +1204,19 @@
               },
               {
                 "id": "CustomDomain",
-                "path": "usWest1GoingGlobalWithServerlessStack/globalddb.rup12.xyz/CustomDomain",
+                "path": "usWest1/globalddb.rup12.xyz/CustomDomain",
                 "children": [
                   {
                     "id": "Resource",
-                    "path": "usWest1GoingGlobalWithServerlessStack/globalddb.rup12.xyz/CustomDomain/Resource"
+                    "path": "usWest1/globalddb.rup12.xyz/CustomDomain/Resource"
                   },
                   {
-                    "id": "Map:--=>usWest1GoingGlobalWithServerlessStackglobalddbrup12xyzBC29576D",
-                    "path": "usWest1GoingGlobalWithServerlessStack/globalddb.rup12.xyz/CustomDomain/Map:--=>usWest1GoingGlobalWithServerlessStackglobalddbrup12xyzBC29576D",
+                    "id": "Map:--=>usWest1globalddbrup12xyz9E3A0DD2",
+                    "path": "usWest1/globalddb.rup12.xyz/CustomDomain/Map:--=>usWest1globalddbrup12xyz9E3A0DD2",
                     "children": [
                       {
                         "id": "Resource",
-                        "path": "usWest1GoingGlobalWithServerlessStack/globalddb.rup12.xyz/CustomDomain/Map:--=>usWest1GoingGlobalWithServerlessStackglobalddbrup12xyzBC29576D/Resource"
+                        "path": "usWest1/globalddb.rup12.xyz/CustomDomain/Map:--=>usWest1globalddbrup12xyz9E3A0DD2/Resource"
                       }
                     ]
                   }
@@ -549,28 +1227,166 @@
         ]
       },
       {
-        "id": "apNortheast1GoingGlobalWithServerlessStack",
-        "path": "apNortheast1GoingGlobalWithServerlessStack",
+        "id": "apNortheast1",
+        "path": "apNortheast1",
         "children": [
           {
-            "id": "ddbGlobalHandler",
-            "path": "apNortheast1GoingGlobalWithServerlessStack/ddbGlobalHandler",
+            "id": "VPC",
+            "path": "apNortheast1/VPC",
+            "children": [
+              {
+                "id": "Resource",
+                "path": "apNortheast1/VPC/Resource"
+              },
+              {
+                "id": "PublicSubnet1",
+                "path": "apNortheast1/VPC/PublicSubnet1",
+                "children": [
+                  {
+                    "id": "Subnet",
+                    "path": "apNortheast1/VPC/PublicSubnet1/Subnet"
+                  },
+                  {
+                    "id": "Acl",
+                    "path": "apNortheast1/VPC/PublicSubnet1/Acl"
+                  },
+                  {
+                    "id": "RouteTable",
+                    "path": "apNortheast1/VPC/PublicSubnet1/RouteTable"
+                  },
+                  {
+                    "id": "RouteTableAssociation",
+                    "path": "apNortheast1/VPC/PublicSubnet1/RouteTableAssociation"
+                  },
+                  {
+                    "id": "DefaultRoute",
+                    "path": "apNortheast1/VPC/PublicSubnet1/DefaultRoute"
+                  },
+                  {
+                    "id": "EIP",
+                    "path": "apNortheast1/VPC/PublicSubnet1/EIP"
+                  },
+                  {
+                    "id": "NATGateway",
+                    "path": "apNortheast1/VPC/PublicSubnet1/NATGateway"
+                  }
+                ]
+              },
+              {
+                "id": "PublicSubnet2",
+                "path": "apNortheast1/VPC/PublicSubnet2",
+                "children": [
+                  {
+                    "id": "Subnet",
+                    "path": "apNortheast1/VPC/PublicSubnet2/Subnet"
+                  },
+                  {
+                    "id": "Acl",
+                    "path": "apNortheast1/VPC/PublicSubnet2/Acl"
+                  },
+                  {
+                    "id": "RouteTable",
+                    "path": "apNortheast1/VPC/PublicSubnet2/RouteTable"
+                  },
+                  {
+                    "id": "RouteTableAssociation",
+                    "path": "apNortheast1/VPC/PublicSubnet2/RouteTableAssociation"
+                  },
+                  {
+                    "id": "DefaultRoute",
+                    "path": "apNortheast1/VPC/PublicSubnet2/DefaultRoute"
+                  },
+                  {
+                    "id": "EIP",
+                    "path": "apNortheast1/VPC/PublicSubnet2/EIP"
+                  },
+                  {
+                    "id": "NATGateway",
+                    "path": "apNortheast1/VPC/PublicSubnet2/NATGateway"
+                  }
+                ]
+              },
+              {
+                "id": "PrivateSubnet1",
+                "path": "apNortheast1/VPC/PrivateSubnet1",
+                "children": [
+                  {
+                    "id": "Subnet",
+                    "path": "apNortheast1/VPC/PrivateSubnet1/Subnet"
+                  },
+                  {
+                    "id": "Acl",
+                    "path": "apNortheast1/VPC/PrivateSubnet1/Acl"
+                  },
+                  {
+                    "id": "RouteTable",
+                    "path": "apNortheast1/VPC/PrivateSubnet1/RouteTable"
+                  },
+                  {
+                    "id": "RouteTableAssociation",
+                    "path": "apNortheast1/VPC/PrivateSubnet1/RouteTableAssociation"
+                  },
+                  {
+                    "id": "DefaultRoute",
+                    "path": "apNortheast1/VPC/PrivateSubnet1/DefaultRoute"
+                  }
+                ]
+              },
+              {
+                "id": "PrivateSubnet2",
+                "path": "apNortheast1/VPC/PrivateSubnet2",
+                "children": [
+                  {
+                    "id": "Subnet",
+                    "path": "apNortheast1/VPC/PrivateSubnet2/Subnet"
+                  },
+                  {
+                    "id": "Acl",
+                    "path": "apNortheast1/VPC/PrivateSubnet2/Acl"
+                  },
+                  {
+                    "id": "RouteTable",
+                    "path": "apNortheast1/VPC/PrivateSubnet2/RouteTable"
+                  },
+                  {
+                    "id": "RouteTableAssociation",
+                    "path": "apNortheast1/VPC/PrivateSubnet2/RouteTableAssociation"
+                  },
+                  {
+                    "id": "DefaultRoute",
+                    "path": "apNortheast1/VPC/PrivateSubnet2/DefaultRoute"
+                  }
+                ]
+              },
+              {
+                "id": "IGW",
+                "path": "apNortheast1/VPC/IGW"
+              },
+              {
+                "id": "VPCGW",
+                "path": "apNortheast1/VPC/VPCGW"
+              }
+            ]
+          },
+          {
+            "id": "getGlobalALB",
+            "path": "apNortheast1/getGlobalALB",
             "children": [
               {
                 "id": "ServiceRole",
-                "path": "apNortheast1GoingGlobalWithServerlessStack/ddbGlobalHandler/ServiceRole",
+                "path": "apNortheast1/getGlobalALB/ServiceRole",
                 "children": [
                   {
                     "id": "Resource",
-                    "path": "apNortheast1GoingGlobalWithServerlessStack/ddbGlobalHandler/ServiceRole/Resource"
+                    "path": "apNortheast1/getGlobalALB/ServiceRole/Resource"
                   },
                   {
                     "id": "DefaultPolicy",
-                    "path": "apNortheast1GoingGlobalWithServerlessStack/ddbGlobalHandler/ServiceRole/DefaultPolicy",
+                    "path": "apNortheast1/getGlobalALB/ServiceRole/DefaultPolicy",
                     "children": [
                       {
                         "id": "Resource",
-                        "path": "apNortheast1GoingGlobalWithServerlessStack/ddbGlobalHandler/ServiceRole/DefaultPolicy/Resource"
+                        "path": "apNortheast1/getGlobalALB/ServiceRole/DefaultPolicy/Resource"
                       }
                     ]
                   }
@@ -578,125 +1394,213 @@
               },
               {
                 "id": "Code",
-                "path": "apNortheast1GoingGlobalWithServerlessStack/ddbGlobalHandler/Code",
+                "path": "apNortheast1/getGlobalALB/Code",
                 "children": [
                   {
                     "id": "Stage",
-                    "path": "apNortheast1GoingGlobalWithServerlessStack/ddbGlobalHandler/Code/Stage"
+                    "path": "apNortheast1/getGlobalALB/Code/Stage"
                   },
                   {
                     "id": "AssetBucket",
-                    "path": "apNortheast1GoingGlobalWithServerlessStack/ddbGlobalHandler/Code/AssetBucket"
+                    "path": "apNortheast1/getGlobalALB/Code/AssetBucket"
                   }
                 ]
               },
               {
                 "id": "Resource",
-                "path": "apNortheast1GoingGlobalWithServerlessStack/ddbGlobalHandler/Resource"
+                "path": "apNortheast1/getGlobalALB/Resource"
+              },
+              {
+                "id": "InvokeServicePrincipal(elasticloadbalancing.amazonaws.com)",
+                "path": "apNortheast1/getGlobalALB/InvokeServicePrincipal(elasticloadbalancing.amazonaws.com)"
               }
             ]
           },
           {
             "id": "AssetParameters",
-            "path": "apNortheast1GoingGlobalWithServerlessStack/AssetParameters",
+            "path": "apNortheast1/AssetParameters",
             "children": [
               {
-                "id": "2f8513e8f4a500e6c8fec714b559b17f323f9aeaf8c4af7fed75e975ff0575e2",
-                "path": "apNortheast1GoingGlobalWithServerlessStack/AssetParameters/2f8513e8f4a500e6c8fec714b559b17f323f9aeaf8c4af7fed75e975ff0575e2",
+                "id": "8210dba368dc4e035f07c2d75fb388adad44de930d9c48c8ddf64ba047421d39",
+                "path": "apNortheast1/AssetParameters/8210dba368dc4e035f07c2d75fb388adad44de930d9c48c8ddf64ba047421d39",
                 "children": [
                   {
                     "id": "S3Bucket",
-                    "path": "apNortheast1GoingGlobalWithServerlessStack/AssetParameters/2f8513e8f4a500e6c8fec714b559b17f323f9aeaf8c4af7fed75e975ff0575e2/S3Bucket"
+                    "path": "apNortheast1/AssetParameters/8210dba368dc4e035f07c2d75fb388adad44de930d9c48c8ddf64ba047421d39/S3Bucket"
                   },
                   {
                     "id": "S3VersionKey",
-                    "path": "apNortheast1GoingGlobalWithServerlessStack/AssetParameters/2f8513e8f4a500e6c8fec714b559b17f323f9aeaf8c4af7fed75e975ff0575e2/S3VersionKey"
+                    "path": "apNortheast1/AssetParameters/8210dba368dc4e035f07c2d75fb388adad44de930d9c48c8ddf64ba047421d39/S3VersionKey"
                   },
                   {
                     "id": "ArtifactHash",
-                    "path": "apNortheast1GoingGlobalWithServerlessStack/AssetParameters/2f8513e8f4a500e6c8fec714b559b17f323f9aeaf8c4af7fed75e975ff0575e2/ArtifactHash"
+                    "path": "apNortheast1/AssetParameters/8210dba368dc4e035f07c2d75fb388adad44de930d9c48c8ddf64ba047421d39/ArtifactHash"
                   }
                 ]
               }
             ]
           },
           {
-            "id": "Certificate",
-            "path": "apNortheast1GoingGlobalWithServerlessStack/Certificate"
-          },
-          {
-            "id": "globalddb.rup12.xyz",
-            "path": "apNortheast1GoingGlobalWithServerlessStack/globalddb.rup12.xyz",
+            "id": "LB",
+            "path": "apNortheast1/LB",
             "children": [
               {
                 "id": "Resource",
-                "path": "apNortheast1GoingGlobalWithServerlessStack/globalddb.rup12.xyz/Resource"
+                "path": "apNortheast1/LB/Resource"
               },
               {
-                "id": "Deployment",
-                "path": "apNortheast1GoingGlobalWithServerlessStack/globalddb.rup12.xyz/Deployment",
+                "id": "SecurityGroup",
+                "path": "apNortheast1/LB/SecurityGroup",
                 "children": [
                   {
                     "id": "Resource",
-                    "path": "apNortheast1GoingGlobalWithServerlessStack/globalddb.rup12.xyz/Deployment/Resource"
+                    "path": "apNortheast1/LB/SecurityGroup/Resource"
+                  }
+                ]
+              },
+              {
+                "id": "Listener",
+                "path": "apNortheast1/LB/Listener",
+                "children": [
+                  {
+                    "id": "Resource",
+                    "path": "apNortheast1/LB/Listener/Resource"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "lambdaTargetGroup",
+            "path": "apNortheast1/lambdaTargetGroup",
+            "children": [
+              {
+                "id": "Resource",
+                "path": "apNortheast1/lambdaTargetGroup/Resource"
+              }
+            ]
+          },
+          {
+            "id": "ddbGlobalHandler",
+            "path": "apNortheast1/ddbGlobalHandler",
+            "children": [
+              {
+                "id": "ServiceRole",
+                "path": "apNortheast1/ddbGlobalHandler/ServiceRole",
+                "children": [
+                  {
+                    "id": "Resource",
+                    "path": "apNortheast1/ddbGlobalHandler/ServiceRole/Resource"
+                  },
+                  {
+                    "id": "DefaultPolicy",
+                    "path": "apNortheast1/ddbGlobalHandler/ServiceRole/DefaultPolicy",
+                    "children": [
+                      {
+                        "id": "Resource",
+                        "path": "apNortheast1/ddbGlobalHandler/ServiceRole/DefaultPolicy/Resource"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "Code",
+                "path": "apNortheast1/ddbGlobalHandler/Code",
+                "children": [
+                  {
+                    "id": "Stage",
+                    "path": "apNortheast1/ddbGlobalHandler/Code/Stage"
+                  },
+                  {
+                    "id": "AssetBucket",
+                    "path": "apNortheast1/ddbGlobalHandler/Code/AssetBucket"
+                  }
+                ]
+              },
+              {
+                "id": "Resource",
+                "path": "apNortheast1/ddbGlobalHandler/Resource"
+              }
+            ]
+          },
+          {
+            "id": "Certificate",
+            "path": "apNortheast1/Certificate"
+          },
+          {
+            "id": "globalddb.rup12.xyz",
+            "path": "apNortheast1/globalddb.rup12.xyz",
+            "children": [
+              {
+                "id": "Resource",
+                "path": "apNortheast1/globalddb.rup12.xyz/Resource"
+              },
+              {
+                "id": "Deployment",
+                "path": "apNortheast1/globalddb.rup12.xyz/Deployment",
+                "children": [
+                  {
+                    "id": "Resource",
+                    "path": "apNortheast1/globalddb.rup12.xyz/Deployment/Resource"
                   }
                 ]
               },
               {
                 "id": "DeploymentStage.prod",
-                "path": "apNortheast1GoingGlobalWithServerlessStack/globalddb.rup12.xyz/DeploymentStage.prod",
+                "path": "apNortheast1/globalddb.rup12.xyz/DeploymentStage.prod",
                 "children": [
                   {
                     "id": "Resource",
-                    "path": "apNortheast1GoingGlobalWithServerlessStack/globalddb.rup12.xyz/DeploymentStage.prod/Resource"
+                    "path": "apNortheast1/globalddb.rup12.xyz/DeploymentStage.prod/Resource"
                   }
                 ]
               },
               {
                 "id": "Endpoint",
-                "path": "apNortheast1GoingGlobalWithServerlessStack/globalddb.rup12.xyz/Endpoint"
+                "path": "apNortheast1/globalddb.rup12.xyz/Endpoint"
               },
               {
                 "id": "CloudWatchRole",
-                "path": "apNortheast1GoingGlobalWithServerlessStack/globalddb.rup12.xyz/CloudWatchRole",
+                "path": "apNortheast1/globalddb.rup12.xyz/CloudWatchRole",
                 "children": [
                   {
                     "id": "Resource",
-                    "path": "apNortheast1GoingGlobalWithServerlessStack/globalddb.rup12.xyz/CloudWatchRole/Resource"
+                    "path": "apNortheast1/globalddb.rup12.xyz/CloudWatchRole/Resource"
                   }
                 ]
               },
               {
                 "id": "Account",
-                "path": "apNortheast1GoingGlobalWithServerlessStack/globalddb.rup12.xyz/Account"
+                "path": "apNortheast1/globalddb.rup12.xyz/Account"
               },
               {
                 "id": "Default",
-                "path": "apNortheast1GoingGlobalWithServerlessStack/globalddb.rup12.xyz/Default",
+                "path": "apNortheast1/globalddb.rup12.xyz/Default",
                 "children": [
                   {
                     "id": "global",
-                    "path": "apNortheast1GoingGlobalWithServerlessStack/globalddb.rup12.xyz/Default/global",
+                    "path": "apNortheast1/globalddb.rup12.xyz/Default/global",
                     "children": [
                       {
                         "id": "Resource",
-                        "path": "apNortheast1GoingGlobalWithServerlessStack/globalddb.rup12.xyz/Default/global/Resource"
+                        "path": "apNortheast1/globalddb.rup12.xyz/Default/global/Resource"
                       },
                       {
                         "id": "GET",
-                        "path": "apNortheast1GoingGlobalWithServerlessStack/globalddb.rup12.xyz/Default/global/GET",
+                        "path": "apNortheast1/globalddb.rup12.xyz/Default/global/GET",
                         "children": [
                           {
-                            "id": "ApiPermission.apNortheast1GoingGlobalWithServerlessStackglobalddbrup12xyzF9608CFF.GET..global",
-                            "path": "apNortheast1GoingGlobalWithServerlessStack/globalddb.rup12.xyz/Default/global/GET/ApiPermission.apNortheast1GoingGlobalWithServerlessStackglobalddbrup12xyzF9608CFF.GET..global"
+                            "id": "ApiPermission.apNortheast1globalddbrup12xyz49BC7B1B.GET..global",
+                            "path": "apNortheast1/globalddb.rup12.xyz/Default/global/GET/ApiPermission.apNortheast1globalddbrup12xyz49BC7B1B.GET..global"
                           },
                           {
-                            "id": "ApiPermission.Test.apNortheast1GoingGlobalWithServerlessStackglobalddbrup12xyzF9608CFF.GET..global",
-                            "path": "apNortheast1GoingGlobalWithServerlessStack/globalddb.rup12.xyz/Default/global/GET/ApiPermission.Test.apNortheast1GoingGlobalWithServerlessStackglobalddbrup12xyzF9608CFF.GET..global"
+                            "id": "ApiPermission.Test.apNortheast1globalddbrup12xyz49BC7B1B.GET..global",
+                            "path": "apNortheast1/globalddb.rup12.xyz/Default/global/GET/ApiPermission.Test.apNortheast1globalddbrup12xyz49BC7B1B.GET..global"
                           },
                           {
                             "id": "Resource",
-                            "path": "apNortheast1GoingGlobalWithServerlessStack/globalddb.rup12.xyz/Default/global/GET/Resource"
+                            "path": "apNortheast1/globalddb.rup12.xyz/Default/global/GET/Resource"
                           }
                         ]
                       }
@@ -706,19 +1610,19 @@
               },
               {
                 "id": "CustomDomain",
-                "path": "apNortheast1GoingGlobalWithServerlessStack/globalddb.rup12.xyz/CustomDomain",
+                "path": "apNortheast1/globalddb.rup12.xyz/CustomDomain",
                 "children": [
                   {
                     "id": "Resource",
-                    "path": "apNortheast1GoingGlobalWithServerlessStack/globalddb.rup12.xyz/CustomDomain/Resource"
+                    "path": "apNortheast1/globalddb.rup12.xyz/CustomDomain/Resource"
                   },
                   {
-                    "id": "Map:--=>apNortheast1GoingGlobalWithServerlessStackglobalddbrup12xyzF9608CFF",
-                    "path": "apNortheast1GoingGlobalWithServerlessStack/globalddb.rup12.xyz/CustomDomain/Map:--=>apNortheast1GoingGlobalWithServerlessStackglobalddbrup12xyzF9608CFF",
+                    "id": "Map:--=>apNortheast1globalddbrup12xyz49BC7B1B",
+                    "path": "apNortheast1/globalddb.rup12.xyz/CustomDomain/Map:--=>apNortheast1globalddbrup12xyz49BC7B1B",
                     "children": [
                       {
                         "id": "Resource",
-                        "path": "apNortheast1GoingGlobalWithServerlessStack/globalddb.rup12.xyz/CustomDomain/Map:--=>apNortheast1GoingGlobalWithServerlessStackglobalddbrup12xyzF9608CFF/Resource"
+                        "path": "apNortheast1/globalddb.rup12.xyz/CustomDomain/Map:--=>apNortheast1globalddbrup12xyz49BC7B1B/Resource"
                       }
                     ]
                   }
